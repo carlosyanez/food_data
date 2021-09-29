@@ -1,0 +1,497 @@
+<!-- start templates/web/common/site_layout.tt.html -->,search_category,search_country
+<!doctype html>,Cocoa&and&its&products,Slovakia
+"<html class=""no-js"" lang=""en"" data-serverdomain=""openfoodfacts.org"" dir=""ltr"">",Cocoa&and&its&products,Slovakia
+<head>,Cocoa&and&its&products,Slovakia
+"<meta charset=""utf-8"">",Cocoa&and&its&products,Slovakia
+<title>Search results</title>,Cocoa&and&its&products,Slovakia
+"<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">",Cocoa&and&its&products,Slovakia
+"<meta property=""fb:app_id"" content=""219331381518041"">",Cocoa&and&its&products,Slovakia
+"<meta property=""og:type"" content=""food"">",Cocoa&and&its&products,Slovakia
+"<meta property=""og:title"" content="""">",Cocoa&and&its&products,Slovakia
+"<meta property=""og:url"" content=""https://world.openfoodfacts.org/cgi/search.pl?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=Cocoa&tagtype_1=categories&tag_contains_1=does_not_contain&tag_1=Nuts&tagtype_2=categories&tag_contains_2=does_not_contain&tag_2=peanuts&tagtype_3=allergens&tag_contains_3=does_not_contain&tag_3=nuts&tagtype_4=allergens&tag_contains_4=does_not_contain&tag_4=peanuts&tagtype_5=traces&tag_contains_5=does_not_contain&tag_5=nuts&tagtype_6=traces&tag_contains_6=does_not_contain&tag_6=peanuts&tagtype_7=countries&tag_contains_7=contains&tag_7=Slovakia&sort_by=unique_scans_n&page_size=20"">",Cocoa&and&its&products,Slovakia
+"<meta property=""og:image"" content=""https://world.openfoodfacts.org/images/misc/openfoodfacts-logo-en-356.png"">",Cocoa&and&its&products,Slovakia
+"<meta property=""og:description"" content="""">",Cocoa&and&its&products,Slovakia
+"<link rel=""manifest"" href=""/cgi/manifest.pl"">",Cocoa&and&its&products,Slovakia
+"<link rel=""mask-icon"" href=""/images/favicon/safari-pinned-tab.svg"" color=""#5bbad5"">",Cocoa&and&its&products,Slovakia
+"<link rel=""shortcut icon"" href=""/images/favicon/favicon.ico"">",Cocoa&and&its&products,Slovakia
+"<meta name=""msapplication-TileColor"" content=""#da532c"">",Cocoa&and&its&products,Slovakia
+"<meta name=""msapplication-TileImage"" content=""/images/favicon/mstile-144x144.png"">",Cocoa&and&its&products,Slovakia
+"<meta name=""msapplication-config"" content=""/images/favicon/browserconfig.xml"">",Cocoa&and&its&products,Slovakia
+"<meta name=""_globalsign-domain-verification"" content=""2ku73dDL0bAPTj_s1aylm6vxvrBZFK59SfbH_RdUya"" />",Cocoa&and&its&products,Slovakia
+"<meta name=""apple-itunes-app"" content=""app-id=588797948"">",Cocoa&and&its&products,Slovakia
+"<meta name=""flattr:id"" content=""dw637l"">",Cocoa&and&its&products,Slovakia
+"<link rel=""canonical"" href=""https://world.openfoodfacts.org/cgi/search.pl?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=Cocoa&tagtype_1=categories&tag_contains_1=does_not_contain&tag_1=Nuts&tagtype_2=categories&tag_contains_2=does_not_contain&tag_2=peanuts&tagtype_3=allergens&tag_contains_3=does_not_contain&tag_3=nuts&tagtype_4=allergens&tag_contains_4=does_not_contain&tag_4=peanuts&tagtype_5=traces&tag_contains_5=does_not_contain&tag_5=nuts&tagtype_6=traces&tag_contains_6=does_not_contain&tag_6=peanuts&tagtype_7=countries&tag_contains_7=contains&tag_7=Slovakia&sort_by=unique_scans_n&page_size=20"">",Cocoa&and&its&products,Slovakia
+"<link rel=""stylesheet"" href=""https://static.openfoodfacts.org/css/dist/app-ltr.css?v=1632236886"">",Cocoa&and&its&products,Slovakia
+"<link rel=""stylesheet"" href=""https://static.openfoodfacts.org/css/dist/jqueryui/themes/base/jquery-ui.css"">",Cocoa&and&its&products,Slovakia
+"<link rel=""stylesheet"" href=""https://static.openfoodfacts.org/css/dist/select2.min.css"">",Cocoa&and&its&products,Slovakia
+"<link rel=""search"" href=""https://world.openfoodfacts.org/cgi/opensearch.pl"" type=""application/opensearchdescription+xml"" title=""Open Food Facts"">",Cocoa&and&its&products,Slovakia
+"<style media=""all"">",Cocoa&and&its&products,Slovakia
+.show-when-no-access-to-producers-platform {display:none},Cocoa&and&its&products,Slovakia
+.show-when-logged-in {display:none},Cocoa&and&its&products,Slovakia
+</style>,Cocoa&and&its&products,Slovakia
+<!-- Global site tag (gtag.js) - Google Analytics -->,Cocoa&and&its&products,Slovakia
+"<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-31851927-1""></script>",Cocoa&and&its&products,Slovakia
+<script>,Cocoa&and&its&products,Slovakia
+window.dataLayer = window.dataLayer || [];,Cocoa&and&its&products,Slovakia
+function gtag(){dataLayer.push(arguments);},Cocoa&and&its&products,Slovakia
+"gtag('js', new Date());",Cocoa&and&its&products,Slovakia
+"gtag('config', 'UA-31851927-1');",Cocoa&and&its&products,Slovakia
+</script>,Cocoa&and&its&products,Slovakia
+</head>,Cocoa&and&its&products,Slovakia
+"<body class=""other_page"">",Cocoa&and&its&products,Slovakia
+"<nav class=""top-bar"" data-topbar id=""top-bar"">",Cocoa&and&its&products,Slovakia
+"<ul class=""title-area"">",Cocoa&and&its&products,Slovakia
+"<li class=""name"">",Cocoa&and&its&products,Slovakia
+"<h2><a href=""/"" style=""font-size:1rem;"">Open Food Facts</a></h2>",Cocoa&and&its&products,Slovakia
+</li>,Cocoa&and&its&products,Slovakia
+"<li class=""toggle-topbar menu-icon"">",Cocoa&and&its&products,Slovakia
+"<a href=""#""><span>Menu</span></a>",Cocoa&and&its&products,Slovakia
+</li>,Cocoa&and&its&products,Slovakia
+</ul>,Cocoa&and&its&products,Slovakia
+"<section class=""top-bar-section"">",Cocoa&and&its&products,Slovakia
+"<label for=""select_country"" style=""display:none"">Country</label>",Cocoa&and&its&products,Slovakia
+"<ul class=""country_language_selection"">",Cocoa&and&its&products,Slovakia
+"<li class=""has-form has-dropdown"" id=""select_country_li"">",Cocoa&and&its&products,Slovakia
+"<select id=""select_country"" style=""width:100%"" data-placeholder=""Country"">",Cocoa&and&its&products,Slovakia
+<option></option>,Cocoa&and&its&products,Slovakia
+</select>,Cocoa&and&its&products,Slovakia
+</li>,Cocoa&and&its&products,Slovakia
+</ul>,Cocoa&and&its&products,Slovakia
+"<ul class=""search_and_links"">",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-large-up"">",Cocoa&and&its&products,Slovakia
+"<form action=""/cgi/search.pl"">",Cocoa&and&its&products,Slovakia
+"<div class=""row collapse"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-8 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""text"" placeholder=""Search for a product"" name=""search_terms"" value="""">",Cocoa&and&its&products,Slovakia
+"<input name=""search_simple"" value=""1"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+"<input name=""action"" value=""process"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-4 columns"">",Cocoa&and&its&products,Slovakia
+"<button type=""submit"" title=""Search""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></button>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+</li>,Cocoa&and&its&products,Slovakia
+"<li class=""show-for-large-only""><a href=""/cgi/search.pl"" title=""Advanced search""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-xlarge-up""><a href=""/cgi/search.pl""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg> Advanced search</span></a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-large-only""><a href=""/cgi/search.pl?graph=1"" title=""Graphs and maps""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z""/><path fill=""none"" d=""M0 0h24v24H0z""/></svg></a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-xlarge-up""><a href=""/cgi/search.pl?graph=1""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z""/><path fill=""none"" d=""M0 0h24v24H0z""/></svg> Graphs and maps</span></a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-large-up divider""></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/discover"">Discover</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/contribute"">Contribute</a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-large""><a href=""/open-food-facts-mobile-app"" title=""Get the app"" class=""button success""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm-2 20h-4v-1h4v1zm3.25-3H6.75V4h10.5v14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></a></li>",Cocoa&and&its&products,Slovakia
+"<li class=""show-for-xlarge-up""><a href=""/open-food-facts-mobile-app"" class=""button success""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm-2 20h-4v-1h4v1zm3.25-3H6.75V4h10.5v14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg> Get the app</a></li>",Cocoa&and&its&products,Slovakia
+</ul>,Cocoa&and&its&products,Slovakia
+</section>,Cocoa&and&its&products,Slovakia
+</nav>,Cocoa&and&its&products,Slovakia
+"<nav class=""tab-bar show-for-small-only"">",Cocoa&and&its&products,Slovakia
+"<div class=""left-small"">",Cocoa&and&its&products,Slovakia
+"<a href=""#idOfLeftMenu"" role=""button"" aria-controls=""idOfLeftMenu"" aria-expanded=""false"" class=""left-off-canvas-toggle button postfix anonymous"">",Cocoa&and&its&products,Slovakia
+"<svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M3 5v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5a2 2 0 0 0-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg>",Cocoa&and&its&products,Slovakia
+</a>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""middle tab-bar-section"">",Cocoa&and&its&products,Slovakia
+"<form action=""/cgi/search.pl"">",Cocoa&and&its&products,Slovakia
+"<div class=""row collapse"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-8 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""text"" placeholder=""Search for a product"" name=""search_terms"">",Cocoa&and&its&products,Slovakia
+"<input name=""search_simple"" value=""1"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+"<input name=""action"" value=""process"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-2 columns"">",Cocoa&and&its&products,Slovakia
+"<button type=""submit"" class=""button postfix""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></button>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-2 columns"">",Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/search.pl"" title=""Advanced search""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg> <svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</nav>,Cocoa&and&its&products,Slovakia
+"<div class=""off-canvas-wrap"" data-offcanvas>",Cocoa&and&its&products,Slovakia
+"<div class=""inner-wrap"">",Cocoa&and&its&products,Slovakia
+"<aside class=""left-off-canvas-menu"">",Cocoa&and&its&products,Slovakia
+"<div id=""aside_column"">",Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_blocks.tt.html -->,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Sign in</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_login_register.tt.html -->,Cocoa&and&its&products,Slovakia
+<p>Sign-in to add or edit products.</p>,Cocoa&and&its&products,Slovakia
+"<form method=""post"" action=""/cgi/session.pl"">",Cocoa&and&its&products,Slovakia
+"<div class=""row"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>Username or e-mail address:,Cocoa&and&its&products,Slovakia
+"<input type=""text"" name=""user_id"" autocomplete=""username"" required>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>Password,Cocoa&and&its&products,Slovakia
+"<input type=""password"" name=""password"" autocomplete=""current-password"" required>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>,Cocoa&and&its&products,Slovakia
+"<input type=""checkbox"" name=""remember_me"" checked>",Cocoa&and&its&products,Slovakia
+Remember me,Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<input type=""submit"" name="".submit"" value=""Sign in"" class=""button small"">",Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+<p>Not registered yet?,Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/user.pl"">Create your account. </a><br>",Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/reset_password.pl"">Forgotten password? </a>",Cocoa&and&its&products,Slovakia
+</p>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_login_register.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Add a product</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_product_search_or_add.tt.html -->,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearchdiv_block_aside"">",Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""button small expand"" id=""imgsearchbutton_block_aside""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><circle cx=""12"" cy=""12"" r=""3.2""/><path d=""M9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg> Picture with barcode",Cocoa&and&its&products,Slovakia
+"<input type=""file"" accept=""image/*"" class=""img_input"" name=""imgupload_search"" id=""imgupload_search_block_aside"" style=""position: absolute;",Cocoa&and&its&products,Slovakia
+right:0;,Cocoa&and&its&products,Slovakia
+bottom:0;,Cocoa&and&its&products,Slovakia
+top:0;,Cocoa&and&its&products,Slovakia
+cursor:pointer;,Cocoa&and&its&products,Slovakia
+opacity:0;,Cocoa&and&its&products,Slovakia
+"font-size:40px;""/>",Cocoa&and&its&products,Slovakia
+</a>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""progressbar_block_aside"" class=""progress"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+"<span id=""progressmeter_block_aside"" class=""meter"" style=""width:0%""></span>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearchmsg_block_aside"" data-alert class=""alert-box info"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+Sending image,Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""close"">&times;</a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearcherror_block_aside"" data-alert class=""alert-box alert"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+Upload error,Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""close"">&times;</a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<form method=""post"" action=""/cgi/product.pl"" enctype=""multipart/form-data"">",Cocoa&and&its&products,Slovakia
+"<div class=""row collapse"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-9 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""text"" name=""code"" placeholder=""or Barcode"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-3 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""submit"" value=""Add"" class=""button postfix"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<input type=""submit"" value=""Product without barcode"" class=""button tiny"">",Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_product_search_or_add.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Donate to support our work</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+"<a href=""https://world.openfoodfacts.org/donate-to-open-food-facts""><img src=""https://static.openfoodfacts.org/images/svg/donate-icon.svg"" alt=""Donate to Open Food Facts"" /></a><p>Open Food Facts is made by a non-profit association, independent from the industry. It is made for all, by all, and it is funded by all. You can support our work by <a href=""https://world.openfoodfacts.org/donate-to-open-food-facts"">donating to Open Food Facts</a> and also by <a href=""https://www.lilo.org/fr/open-food-facts/?utm_source=open-food-facts"">using the Lilo search engine</a>.<br/><b>Thank you!</b></p>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_blocks.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</aside>,Cocoa&and&its&products,Slovakia
+"<a class=""exit-off-canvas""></a>",Cocoa&and&its&products,Slovakia
+<!-- full width banner on mobile -->,Cocoa&and&its&products,Slovakia
+<!-- main row - comment used to remove left column and center content on some pages -->,Cocoa&and&its&products,Slovakia
+"<div class=""row full-width"" style=""max-width: 100% !important;"" data-equalizer>",Cocoa&and&its&products,Slovakia
+"<div class=""xxlarge-2 xlarge-2 large-3 medium-4 columns hide-for-small"" style=""background-color:#fafafa;padding-top:1rem;"" data-equalizer-watch>",Cocoa&and&its&products,Slovakia
+"<div class=""sidebar"">",Cocoa&and&its&products,Slovakia
+"<div style=""text-align:center"">",Cocoa&and&its&products,Slovakia
+"<a href=""/""><img id=""logo"" src=""/images/misc/openfoodfacts-logo-en-178x150.png"" srcset=""/images/misc/openfoodfacts-logo-en-356x300.png 2x"" width=""178"" height=""150"" alt=""Open Food Facts logo"" style=""margin-bottom:0.5rem""></a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+Open Food Facts gathers information and data on food products from around the world.,Cocoa&and&its&products,Slovakia
+"<form action=""/cgi/search.pl"" class=""hide-for-large-up"">",Cocoa&and&its&products,Slovakia
+"<div class=""row collapse"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-9 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""text"" placeholder=""Search for a product"" name=""search_terms"">",Cocoa&and&its&products,Slovakia
+"<input name=""search_simple"" value=""1"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+"<input name=""action"" value=""process"" type=""hidden"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-2 columns"">",Cocoa&and&its&products,Slovakia
+"<button type=""submit"" class=""button postfix""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></button>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-1 columns"">",Cocoa&and&its&products,Slovakia
+"<label class=""right inline"">",Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/search.pl"" title=""Advanced search""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><path d=""M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg></a>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_blocks.tt.html -->,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Sign in</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_login_register.tt.html -->,Cocoa&and&its&products,Slovakia
+<p>Sign-in to add or edit products.</p>,Cocoa&and&its&products,Slovakia
+"<form method=""post"" action=""/cgi/session.pl"">",Cocoa&and&its&products,Slovakia
+"<div class=""row"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>Username or e-mail address:,Cocoa&and&its&products,Slovakia
+"<input type=""text"" name=""user_id"" autocomplete=""username"" required>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>Password,Cocoa&and&its&products,Slovakia
+"<input type=""password"" name=""password"" autocomplete=""current-password"" required>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 columns"">",Cocoa&and&its&products,Slovakia
+<label>,Cocoa&and&its&products,Slovakia
+"<input type=""checkbox"" name=""remember_me"" checked>",Cocoa&and&its&products,Slovakia
+Remember me,Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<input type=""submit"" name="".submit"" value=""Sign in"" class=""button small"">",Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+<p>Not registered yet?,Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/user.pl"">Create your account. </a><br>",Cocoa&and&its&products,Slovakia
+"<a href=""/cgi/reset_password.pl"">Forgotten password? </a>",Cocoa&and&its&products,Slovakia
+</p>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_login_register.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Add a product</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/display_product_search_or_add.tt.html -->,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearchdiv_block_side"">",Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""button small expand"" id=""imgsearchbutton_block_side""><svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" class=""icon"" aria-hidden=""true"" focusable=""false""><circle cx=""12"" cy=""12"" r=""3.2""/><path d=""M9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z""/><path d=""M0 0h24v24H0z"" fill=""none""/></svg> Picture with barcode",Cocoa&and&its&products,Slovakia
+"<input type=""file"" accept=""image/*"" class=""img_input"" name=""imgupload_search"" id=""imgupload_search_block_side"" style=""position: absolute;",Cocoa&and&its&products,Slovakia
+right:0;,Cocoa&and&its&products,Slovakia
+bottom:0;,Cocoa&and&its&products,Slovakia
+top:0;,Cocoa&and&its&products,Slovakia
+cursor:pointer;,Cocoa&and&its&products,Slovakia
+opacity:0;,Cocoa&and&its&products,Slovakia
+"font-size:40px;""/>",Cocoa&and&its&products,Slovakia
+</a>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""progressbar_block_side"" class=""progress"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+"<span id=""progressmeter_block_side"" class=""meter"" style=""width:0%""></span>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearchmsg_block_side"" data-alert class=""alert-box info"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+Sending image,Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""close"">&times;</a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""imgsearcherror_block_side"" data-alert class=""alert-box alert"" style=""display:none"">",Cocoa&and&its&products,Slovakia
+Upload error,Cocoa&and&its&products,Slovakia
+"<a href=""#"" class=""close"">&times;</a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<form method=""post"" action=""/cgi/product.pl"" enctype=""multipart/form-data"">",Cocoa&and&its&products,Slovakia
+"<div class=""row collapse"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-9 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""text"" name=""code"" placeholder=""or Barcode"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-3 columns"">",Cocoa&and&its&products,Slovakia
+"<input type=""submit"" value=""Add"" class=""button postfix"">",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<input type=""submit"" value=""Product without barcode"" class=""button tiny"">",Cocoa&and&its&products,Slovakia
+</form>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_product_search_or_add.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""block"">",Cocoa&and&its&products,Slovakia
+"<h3 class=""block_title"">Donate to support our work</h3>",Cocoa&and&its&products,Slovakia
+"<div class=""block_content"">",Cocoa&and&its&products,Slovakia
+"<a href=""https://world.openfoodfacts.org/donate-to-open-food-facts""><img src=""https://static.openfoodfacts.org/images/svg/donate-icon.svg"" alt=""Donate to Open Food Facts"" /></a><p>Open Food Facts is made by a non-profit association, independent from the industry. It is made for all, by all, and it is funded by all. You can support our work by <a href=""https://world.openfoodfacts.org/donate-to-open-food-facts"">donating to Open Food Facts</a> and also by <a href=""https://www.lilo.org/fr/open-food-facts/?utm_source=open-food-facts"">using the Lilo search engine</a>.<br/><b>Thank you!</b></p>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/display_blocks.tt.html -->,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div id=""main_column"" class=""xxlarge-10 xlarge-10 large-9 medium-8 columns"" style=""padding-top:1rem"" data-equalizer-watch>",Cocoa&and&its&products,Slovakia
+<!-- main column content - comment used to remove left column and center content on some pages -->,Cocoa&and&its&products,Slovakia
+<!-- start templates/web/common/includes/donate_banner.tt.html -->,Cocoa&and&its&products,Slovakia
+"<div id=""donate_banner"" class=""row"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-12 large-12 xlarge-8 xxlarge-7 columns"">",Cocoa&and&its&products,Slovakia
+"<div id=""image_banner"" style=""margin-bottom:1rem;"" class=""panel callout"">",Cocoa&and&its&products,Slovakia
+<h2></h2>,Cocoa&and&its&products,Slovakia
+<p><br>,Cocoa&and&its&products,Slovakia
+</p>,Cocoa&and&its&products,Slovakia
+"<div class=""row"">",Cocoa&and&its&products,Slovakia
+"<div class=""small-12 large-4 columns"">",Cocoa&and&its&products,Slovakia
+"<a href=""https://world.openfoodfacts.org/donate-to-open-food-facts?utm_source=off&utm_medium=web&utm_campaign=donate-2020&utm_term=en-text-button"" class=""button round"" style=""margin-bottom:0"">",Cocoa&and&its&products,Slovakia
+</a>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 large-8 columns"">",Cocoa&and&its&products,Slovakia
+"<input id=""hide_image_banner"" type=""checkbox"" style=""margin-top:1.5rem;margin-bottom:0;"">",Cocoa&and&its&products,Slovakia
+"<label for=""hide_image_banner"">",Cocoa&and&its&products,Slovakia
+"<span id=""hide_image_banner_hide"">I have already donated or I'm not interested. Hide the banner.</span>",Cocoa&and&its&products,Slovakia
+</label>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/includes/donate_banner.tt.html -->,Cocoa&and&its&products,Slovakia
+<h1>Search results</h1>,Cocoa&and&its&products,Slovakia
+"<p>No products.</p>&rarr; <a href=""/cgi/search.pl?action=display&tagtype_0=categories&tag_contains_0=contains&tag_0=Cocoa&tagtype_1=categories&tag_contains_1=does_not_contain&tag_1=Nuts&tagtype_2=categories&tag_contains_2=does_not_contain&tag_2=peanuts&tagtype_3=allergens&tag_contains_3=does_not_contain&tag_3=nuts&tagtype_4=allergens&tag_contains_4=does_not_contain&tag_4=peanuts&tagtype_5=traces&tag_contains_5=does_not_contain&tag_5=nuts&tagtype_6=traces&tag_contains_6=does_not_contain&tag_6=peanuts&tagtype_7=countries&tag_contains_7=contains&tag_7=Slovakia&sort_by=unique_scans_n&page_size=20&action=display"">Change search criteria</a><br>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+<footer>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 medium-6 large-3 columns off"">",Cocoa&and&its&products,Slovakia
+"<div class=""title"">Open Food Facts</div>",Cocoa&and&its&products,Slovakia
+"<p>A collaborative, free and open database of food products from around the world.</p>",Cocoa&and&its&products,Slovakia
+<ul>,Cocoa&and&its&products,Slovakia
+"<li><a href=""/legal"">Legal</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/terms-of-use"">Terms of use</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/data"">Data, API and SDKs</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""https://world.openfoodfacts.org/donate-to-open-food-facts"">Donate to Open Food Facts</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""http://world.pro.openfoodfacts.org/"">Producers</a></li>",Cocoa&and&its&products,Slovakia
+</ul>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 medium-6 large-3 columns app"">",Cocoa&and&its&products,Slovakia
+"<div class=""title"">Install the app</div>",Cocoa&and&its&products,Slovakia
+"<a href=""https://apps.apple.com/app/open-food-facts/id588797948""><img src=""/images/misc/appstore/black/appstore_US.svg"" alt=""Download on the App Store"" width=""120"" height=""40"" loading=""lazy""></a>",Cocoa&and&its&products,Slovakia
+"<a href=""https://play.google.com/store/apps/details?id=org.openfoodfacts.scanner&hl=en""><img src=""https://static.openfoodfacts.org/images/misc/google-play-badge-svg-master/img/en_get.svg"" alt=""Get It On Google Play"" width=""102"" height=""40"" loading=""lazy""></a>",Cocoa&and&its&products,Slovakia
+"<a href=""https://www.microsoft.com/en-us/p/openfoodfacts/9nblggh0dkqr""><img src=""/images/misc/microsoft/English.svg"" alt=""Get it from Microsoft"" width=""109"" height=""40"" loading=""lazy""></a>",Cocoa&and&its&products,Slovakia
+"<a href=""https://world.openfoodfacts.org/files/off.apk""><img src=""https://static.openfoodfacts.org/images/misc/android-apk.svg"" alt=""Android APK"" loading=""lazy""></a>",Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 medium-6 large-3 columns project"">",Cocoa&and&its&products,Slovakia
+"<div class=""title"">Discover the project</div>",Cocoa&and&its&products,Slovakia
+<ul>,Cocoa&and&its&products,Slovakia
+"<li><a href=""/who-we-are"">Who we are</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""https://world.openfoodfacts.org/open-food-facts-vision-mission-values-and-programs"">Vision, Mission, Values and Programs</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/faq"">Frequently asked questions</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""https://en.blog.openfoodfacts.org"">Open Food Facts blog</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/press"">Press</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""https://wiki.openfoodfacts.org"">Open Food Facts wiki (en)</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/cgi/top_translators.pl"">Translators</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""/partners"">Partners</a></li>",Cocoa&and&its&products,Slovakia
+"<li><a href=""https://world-fr.openbeautyfacts.org"">Open Beauty Facts - Cosmétiques</a></li>",Cocoa&and&its&products,Slovakia
+</ul>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+"<div class=""small-12 medium-6 large-3 columns community"">",Cocoa&and&its&products,Slovakia
+"<div class=""title"">Join the community</div>",Cocoa&and&its&products,Slovakia
+<p>,Cocoa&and&its&products,Slovakia
+"<a href=""/code-of-conduct"">Code of conduct</a>",Cocoa&and&its&products,Slovakia
+<br><br>,Cocoa&and&its&products,Slovakia
+"Join us on <a href=""https://slack.openfoodfacts.org"">Slack</a>:",Cocoa&and&its&products,Slovakia
+<br>,Cocoa&and&its&products,Slovakia
+"and the <a href=""https://www.facebook.com/groups/openfoodfacts/"">Facebook group for contributors</a>",Cocoa&and&its&products,Slovakia
+"Follow us on <a href=""https://twitter.com/openfoodfacts"">Twitter</a>,",Cocoa&and&its&products,Slovakia
+"<a href=""https://www.facebook.com/OpenFoodFacts"">Facebook</a> and",Cocoa&and&its&products,Slovakia
+"<a href=""https://www.instagram.com/open.food.facts/"">Instagram</a>",Cocoa&and&its&products,Slovakia
+</p>,Cocoa&and&its&products,Slovakia
+</div>,Cocoa&and&its&products,Slovakia
+</footer>,Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/modernizr.js""></script>",Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/jquery.js""></script>",Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/jquery-ui.js""></script>",Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/display.js""></script>",Cocoa&and&its&products,Slovakia
+<script>,Cocoa&and&its&products,Slovakia
+$(function() {,Cocoa&and&its&products,Slovakia
+// start off canvas blocks for small screens,Cocoa&and&its&products,Slovakia
+$('#imgupload_search_block_side').fileupload({,Cocoa&and&its&products,Slovakia
+"sequentialUploads: true,",Cocoa&and&its&products,Slovakia
+"dataType: 'json',",Cocoa&and&its&products,Slovakia
+"url: '/cgi/product.pl',",Cocoa&and&its&products,Slovakia
+"formData : [{name: 'jqueryfileupload', value: 1}],",Cocoa&and&its&products,Slovakia
+"resizeMaxWidth : 2000,",Cocoa&and&its&products,Slovakia
+"resizeMaxHeight : 2000,",Cocoa&and&its&products,Slovakia
+"done: function (e, data) {",Cocoa&and&its&products,Slovakia
+if (data.result.location) {,Cocoa&and&its&products,Slovakia
+"$(location).attr('href',data.result.location);",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+if (data.result.error) {,Cocoa&and&its&products,Slovakia
+"$(""#imgsearcherror_block_side"").html(data.result.error);",Cocoa&and&its&products,Slovakia
+"$(""#imgsearcherror_block_side"").show();",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+"fail : function (e, data) {",Cocoa&and&its&products,Slovakia
+"$(""#imgsearcherror_block_side"").show();",Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+"always : function (e, data) {",Cocoa&and&its&products,Slovakia
+"$(""#progressbar_block_side"").hide();",Cocoa&and&its&products,Slovakia
+"$(""#imgsearchbutton_block_side"").show();",Cocoa&and&its&products,Slovakia
+"$(""#imgsearchmsg_block_side"").hide();",Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+"start: function (e, data) {",Cocoa&and&its&products,Slovakia
+"$(""#imgsearchbutton_block_side"").hide();",Cocoa&and&its&products,Slovakia
+"$(""#imgsearcherror_block_side"").hide();",Cocoa&and&its&products,Slovakia
+"$(""#imgsearchmsg_block_side"").show();",Cocoa&and&its&products,Slovakia
+"$(""#progressbar_block_side"").show();",Cocoa&and&its&products,Slovakia
+"$(""#progressmeter_block_side"").css('width', ""0%"");",Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+"sent: function (e, data) {",Cocoa&and&its&products,Slovakia
+if (data.dataType &&,Cocoa&and&its&products,Slovakia
+"data.dataType.substr(0, 6) === 'iframe') {",Cocoa&and&its&products,Slovakia
+// Iframe Transport does not support progress events.,Cocoa&and&its&products,Slovakia
+"// In lack of an indeterminate progress bar, we set",Cocoa&and&its&products,Slovakia
+"// the progress to 100%, showing the full animated bar:",Cocoa&and&its&products,Slovakia
+"$(""#progressmeter_block_side"").css('width', ""100%"");",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+"progress: function (e, data) {",Cocoa&and&its&products,Slovakia
+"$(""#progressmeter_block_side"").css('width', parseInt(data.loaded / data.total * 100, 10) + ""%"");",Cocoa&and&its&products,Slovakia
+"$(""#imgsearchdebug_block_side"").html(data.loaded + ' / ' + data.total);",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+});,Cocoa&and&its&products,Slovakia
+// end off canvas blocks for small screens,Cocoa&and&its&products,Slovakia
+if ($.cookie('hide_image_banner_2020') == '1') {,Cocoa&and&its&products,Slovakia
+"$('#hide_image_banner').prop('checked', true);",Cocoa&and&its&products,Slovakia
+$('#donate_banner').remove();,Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+else {,Cocoa&and&its&products,Slovakia
+"$('#hide_image_banner').prop('checked', false);",Cocoa&and&its&products,Slovakia
+$('#donate_banner').show();,Cocoa&and&its&products,Slovakia
+$('#hide_image_banner').change(function () {,Cocoa&and&its&products,Slovakia
+if ($('#hide_image_banner').prop('checked')) {,Cocoa&and&its&products,Slovakia
+"$.cookie('hide_image_banner_2020', '1', { expires: 90, path: '/' });",Cocoa&and&its&products,Slovakia
+$('#donate_banner').remove();,Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+});,Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+});,Cocoa&and&its&products,Slovakia
+</script>,Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/foundation.js""></script>",Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/jquery.cookie.js""></script>",Cocoa&and&its&products,Slovakia
+"<script src=""https://static.openfoodfacts.org/js/dist/select2.min.js""></script>",Cocoa&and&its&products,Slovakia
+"<script type=""text/javascript"" src=""/js/dist/jquery.iframe-transport.js""></script>",Cocoa&and&its&products,Slovakia
+"<script type=""text/javascript"" src=""/js/dist/jquery.fileupload.js""></script>",Cocoa&and&its&products,Slovakia
+"<script type=""text/javascript"" src=""/js/dist/load-image.all.min.js""></script>",Cocoa&and&its&products,Slovakia
+"<script type=""text/javascript"" src=""/js/dist/canvas-to-blob.js""></script>",Cocoa&and&its&products,Slovakia
+<script>,Cocoa&and&its&products,Slovakia
+$(document).foundation({,Cocoa&and&its&products,Slovakia
+equalizer : {,Cocoa&and&its&products,Slovakia
+equalize_on_stack: true,Cocoa&and&its&products,Slovakia
+"},",Cocoa&and&its&products,Slovakia
+accordion: {,Cocoa&and&its&products,Slovakia
+callback : function (accordion) {,Cocoa&and&its&products,Slovakia
+"$(document).foundation('equalizer', 'reflow');",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+});,Cocoa&and&its&products,Slovakia
+</script>,Cocoa&and&its&products,Slovakia
+"<script type=""application/ld+json"">",Cocoa&and&its&products,Slovakia
+{,Cocoa&and&its&products,Slovakia
+"@context : https://schema.org,",Cocoa&and&its&products,Slovakia
+"@type : WebSite,",Cocoa&and&its&products,Slovakia
+"name : Open Food Facts,",Cocoa&and&its&products,Slovakia
+"url : https://world.openfoodfacts.org,",Cocoa&and&its&products,Slovakia
+potentialAction: {,Cocoa&and&its&products,Slovakia
+"@type: SearchAction,",Cocoa&and&its&products,Slovakia
+"target: https://world.openfoodfacts.org/cgi/search.pl?search_terms=?{search_term_string},",Cocoa&and&its&products,Slovakia
+query-input: required name=search_term_string,Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+{,Cocoa&and&its&products,Slovakia
+"@context: https://schema.org/,",Cocoa&and&its&products,Slovakia
+"@type: Organization,",Cocoa&and&its&products,Slovakia
+"url: https://world.openfoodfacts.org,",Cocoa&and&its&products,Slovakia
+"logo: /images/misc/openfoodfacts-logo-en-178x150.png,",Cocoa&and&its&products,Slovakia
+"name: Open Food Facts,",Cocoa&and&its&products,Slovakia
+"sameAs : [ https://www.facebook.com/OpenFoodFacts, https://twitter.com/OpenFoodFacts]",Cocoa&and&its&products,Slovakia
+},Cocoa&and&its&products,Slovakia
+</script>,Cocoa&and&its&products,Slovakia
+</body>,Cocoa&and&its&products,Slovakia
+</html>,Cocoa&and&its&products,Slovakia
+<!-- end templates/web/common/site_layout.tt.html -->,Cocoa&and&its&products,Slovakia

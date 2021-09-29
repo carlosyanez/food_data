@@ -1,0 +1,6 @@
+library(here)
+#source(here("R","0 env_setup.R"))
+source(here("R","1 load_csv.R"))
+#source(here("R","2 source allergen dictionary.R"))
+source(here("R","3 clean.R"))
+source(here("R","4 trelliscope.R"))
