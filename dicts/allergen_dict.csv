@@ -1,53 +1,85 @@
 lang,allergen
  ar,حليب
- bg,закваска
  ca,Ametlla
  ca,api
- ca,Cacauets
+ ca,conte sulfits
+ ca,Crustacis
  ca,fruits de closca
  ca,Fruits de closca i ou
  ca,Frutos de cáscara
  ca,llet
- ca,Llet
- ca,lliure-de-gluten
  ca,Pot contenir llet
+ ca,Pot contenir traces de llavors de sèsam.
  ca,Sèsam
+ ca,soja y mostaza
+ cs,Lískové oříšky
  cs,Může obsahovat ořechy.
  cs,Může obsahovat vejce ořechy
+ cs,ořechy
+ cs,sója
  cs,suchých skořápkových plodů
- cs,sušene-skořapkove-plody
  da,Jordnötter
  da,Kan indeholde spor af jordnødder og mælk.
+ da,Sulfiter
+ de,... Mineralwasser
+ de,5 %
+ de,abgestorbene Nematoden
+ de,alkohol
+ de,Alkohol
  de,Anderen glutenhaltigen Getreidearten
+ de,Apfel
+ de,Ascorbinsäure
+ de,Calcium
  de,Cashew-Kerne
  de,Cashewnuss
+ de,Céleri
+ de,Das Produkt kann Spuren von _Soja_ und _Schalenfrüchten_enthalten.
+ de,Das Produkt kann Spuren von Gluten und Ei enthalten.
+ de,Das Produkt kann Spuren von Schalenfrüchten enthalten.
+ de,Das Produkt kann Spuren von Schalenfrüchten und Lupinen enthalten.
+ de,das-produkt-kann-spuren-von-sesam-enthalten
+ de,Dattelsteinteile
+ de,Deutsches Reinheitsgebot
  de,Die auch Nüsse verwendet verwendet
+ de,E235
+ de,Eiprodukte
+ de,entfalt-sulfite
+ de,enthält eine phenylalaninquelle
+ de,enthält eine Phenylalaninquelle
  de,Enthält eine Phenylalaninquelle
+ de,Enthält eine Phenylalaninquelle.
  de,Enthält einen Phenylalaninquelle
+ de,Enthält Guarana
+ de,enthält Sulfite
+ de,Enthält Sulfite
+ de,enthält-eine-phenylalainquelle
+ de,enthält-milchzucker-eiweiß-glutenfrei
  de,Erdnuss Soja Sesam
  de,erdnusse
  de,Erdnüsse Schalenfrüchte
  de,Eventuali tracce di latte.
+ de,Fett
  de,Fruchsteine
  de,fruchtsteine
  de,Fruits à coque
- de,Geliermittel
+ de,Für Allergene siehe fettgedruckte Zutaten. Kann Ei und Soja enthalten.
  de,geliermittel-pektin
+ de,Getreide
  de,Gluten anderer Getreidesorten
  de,Gluten Eier Soja Milch Milcherzeugnisse Sellerie Sesam
  de,Gluten Hühnerei Erdnüsse Soja Mich Haselnüsse Mandeln
  de,Gluten Mandeln
  de,Gluten Milch Sojabohnen
  de,Gluten Schalenfrüchte
- de,Gluten Soja Milch Erdnüsse Sellerie
- de,glutenhaltige-getreide
  de,glutenhaltigem Getreide
+ de,glutenhaltigen Getreidearten
  de,glutenhaltiges Getreide
  de,Gorczyca Jaja Mleko Seler Soja Zboże
  de,Graines de sésame
+ de,Gräten
  de,Hafer Weizen Sojakerne Magermilchpulver Soja
- de,hartschalenobst-nüsse
  de,haselnüsse Mandeln Erdnüsse Soja Gluten
+ de,Hergestellt in einem Betrieb
  de,hinweis-fur-allergiker-kann-schalenfruchte-und-milch-enthalten-da-es-sich-bei-diesem-musli-um-ein-naturpro-dukt-handelt
  de,Kann auch Anteile von Milch enthalten
  de,Kann bei übermäßigem verzehr abführend wirken.
@@ -59,383 +91,591 @@ lang,allergen
  de,Kann Spuren von Ei Soja und Schalenfrüchten enthalten.
  de,Kann spuren von Milch Milch und Schalenfrüchten enthalten
  de,Kann Spuren von Milch Soja und Sellerie enthalten.
+ de,Kann Spuren von Milch und Milcherzeugnissen enthalten
  de,Kann Spuren von MILCHBESTANDTEILEN enthalten.
- de,Kann Spuren von Nüssen enthalten.
  de,Kann Spuren von Nüssen und Soja enthalten. Vor Wärme schützen
  de,Kann Spuren von Senf enthaten.
  de,kann Spuren von Senf Sellerie und Pistazien enthalten
+ de,Kann Spuren von weiteren Schalenfrüchten und weiterem glutenhaltigen Getreide enthalten
  de,Kann vereinzelt Olivensteine oder Teile davon enthalten.
  de,kann-spuren-von-anderen-schalenfruchten-und-soja-enthalten
+ de,kann-spuren-von-lupinen-enthalten-enthält-milch-ohne-gelatine-ohne-konservierungsstoffe
  de,kann-spuren-von-milch-ei-schalenfrüchten-sellerie-und-sulfit-enthalten
- de,kann-vereinzelt-kerne-oder-kernbestandteile-enthalten
  de,Kaufland Warenhandel GmbH & Co. KG
+ de,Kefir
  de,keine
  de,Keine
+ de,keine Angaben
+ de,keinee
  de,Kerne
  de,Kernteile
  de,Kirschkerne
+ de,koffein
+ de,Kümmel
  de,Mais
+ de,Mehrfruchtsaft teilweise aus Fruchtsaftkonzentraten
+ de,mikrobieller Labaustauschstoff
+ de,Milch enthält Lactose
  de,Milch schalen
+ de,Milch Schalenfrüchte Sesam
  de,Milch u. Milcherzeugnisse
+ de,Milch und daraus gewonnene Erzeugnisse.
  de,Milchbestandteile
+ de,Milcherzeugnissen
+ de,Mit einem Hauch Kohlensäure
  de,mit Schwefeldioxid
+ de,Mit Süßungsmitteln
+ de,mit Zugabe von Vitamin C
+ de,molkerei-forster-ag
  de,Naselnüsse
  de,Nicht erkennbar
+ de,Nicht-EU-Landwirtschaft
+ de,Nix enthalten
  de,Nüsse-mandeln
  de,nüsse-milch
  de,Nüssen
  de,Obstkerne
  de,Obststeine
  de,Ohne Aromen
+ de,ohne Farbstoffe
+ de,Ohne Gentechnik
+ de,Ohne Milchzucker
  de,Olivenkerne
+ de,Österreich
+ de,pektin
  de,Pfirsichkerne
+ de,phenyla
  de,Phenylalalin
  de,phenylalanin
  de,Phenylalanin
- de,Phenylalanine
+ de,phenylalaninquelle
+ de,Phenylalaninquelle
  de,PHENYLALANINQUELLE
  de,produced with genetic engineering
  de,Produkt kann Spuren von Milch K-C enthalten.
  de,produkt-kann-spuren-von-schalenfrüchten-enthalten
- de,Schal
+ de,schafskäse
+ de,Schafskäse
  de,Schalenfrüchte Milch Lupinen
+ de,schwarzen Tee
+ de,schwefeldioxid-und-sulphite
  de,Soja Milch
- de,Spuren von anderen Nüssen und Erdnüssen
+ de,Spuren von Mandel und Nüssen enthalten
  de,Sulfit
+ de,Sussholz
+ de,teein
  de,Teile von Obstkernen
+ de,tierisches Lab
+ de,Tierisches Lab
+ de,walnüsse-sesam-lupinen-milch-sojaerzeugnisse
  de,Weizen Ei Soja Milch Sellerie Senf
+ el,Σπόροι σουσαμιού και ξηροί καρποί (αμύγδαλα καρύδια).
+ el,Φιστίκια ή άλλους ξηρούς καρπούς
+ en,*enthält eine Phenylalaninquelle
  en,\037fr
+ en,\037pl
  en,$42
+ en,Allergen statement contains milk
  en,arachidi
+ en,balanced-diet-and-a-healthy-lifestyle-is-recommended-for-good-health
  en,BLE
+ en,Bockhornsklöver
+ en,Bones
  en,byg
+ en,Caffeine
+ en,Caffiene
  en,celery
  en,cocoa
+ en,Contains a source of phenylalanine
+ en,Contains a source of Phenylalanine
  en,Contains Milk
  en,Contains Milk and Soy
+ en,contains sulfites
  en,Contains Wheat and Soybeans
  en,contiene leche y derivados
+ en,Contient des sucres naturellement présents dans les fruits.
  en,Contient une source de phénylalanine
+ en,cows-milk
  en,crustaceans
+ en,dry-residue-33mg-l
  en,E333
+ en,edulcorants
  en,eggs
  en,en-milk-en-nuts-en-peanuts
- en,Erdnüsse
+ en,Erdnüssen
+ en,Este producto es elaborado en equipos donde se procesan alimentos con ingredientes alérgenos
  en,Estee producto contiene avena
+ en,Fenilalanina
  en,fish
+ en,Fragments
+ en,frutos de cascara
+ en,frutos de cáscara
  en,gélatine
  en,gluten
  en,gluten milk peanuts egg
  en,gluten-haselnuss-mandel
+ en,Glutepn
  en,granos de sésamo y/o productos derivados
+ en,Haha
  en,haselnuss-mandel-gluten
  en,idk
- en,Jaja
  en,Jęczmień
  en,Kan ei en noten bevatten.
  en,Kan innehålla spår av mjölk och soja.
- en,kan-sporen-van-melk-en-noten-bevatten
  en,Kann auch Sesamsamen enthalten
+ en,Kann Spuren von Milch-
  en,Kann Spuren von Schalenfrüchten und Ei enthalten.
+ en,Kann Spuren von Sesam und Milcherzeugnissen enthalten.
  en,lait
- en,leche
+ en,Lait
  en,leche y sus derivados y frutos de cáscara
+ en,Llet
  en,lupin
  en,Macadamianüssen
  en,Made by/ Distribution
+ en,made in factory
  en,Mælk
  en,Marillenkerne-oder-teile-davon
  en,May also contain peanuts and nuts
  en,May contain *hazelnuts* and *almonds*.
- en,May contain soy
+ en,May contain traces of cocaine
+ en,May contain traces of gluten and soya
  en,May contain traces of nuts
+ en,may contain traces of peanuts
+ en,May contain traces of peanuts and tree nuts
  en,May contain traces of peanuts and/or tree nuts
  en,may include naturally occurring glutamates
  en,Milch
  en,Milcherzeugnissen
  en,milk
- en,Milk eggs soy treenuts
- en,Mjölk
- en,mleko
+ en,Milk nuts
  en,molluscs
+ en,moutarde
  en,mustard
  en,none
  en,Note
+ en,noten
+ en,noyau
  en,nuez
+ en,Nüssen
  en,Nuts  Cacao
- en,Nuts  de
  en,olive pits
  en,Olive pits
  en,Peut contenir des morceaux de noyaux d'olive
  en,Peut contenir des traces de lait et de soja
+ en,phenylalanin
+ en,phenylalanine
+ en,Phenylalanine
+ en,phénylalanine
  en,Phénylalanine
+ en,PIT
  en,Pits
  en,puede contener derivados de leche
- en,Puede Contener huevo
- en,Puede contener trazas de
  en,Puede contener trazas de leche y soja.
  en,Puó contenere tracce di frutta a guscio e soia
  en,Salt
  en,Sans gluten
+ en,Sans gluten.
  en,Schalenfrüchte
- en,Seler
+ en,Seasam
  en,sesame-seeds
  en,sésamo y leche
  en,Siarczyny
+ en,Słód
  en,Soia e derivati
+ en,Source of phenylalanin
+ en,Soya og melk
  en,soybeans
+ en,Su
  en,SUITABLE FOR VEGETARIANS
  en,sulphur-dioxide-and-sulphites
  en,Sušené skořápkové plody
+ en,Water
+ en,wheat Gluten
  en,Wheat Gluten
- en,миндаль
+ en,αμύγδαλο
+ en,ΑΥΓΟ.
+ en,Γάλα και προϊόντα του
+ en,Μπορεί να περιέχει ιχνη από φιστίκια αράπικα (αραχίδες) ή καρπούς με κέλυφος.
+ en,Ξηρών καρπών με κέλυφος
  eo,Kann Schalenfrüchte und Erdnüsse enthalten.
- es,2 cucharadas
+ es,*Contiene azucares naturalmente presentes Fecha de caducidad (Dia/Mes) /Lote
+ es,150 g
+ es,225 g
  es,3
  es,Aceite-de-palma
  es,Anchoas (PESCADO)
- es,Cacahuetes y otros frutos de cáscara
+ es,Arêtes
  es,Calcio
+ es,cáscara
+ es,Cereales (gluten menos de 3ppm) y frutos de cáscara.
  es,Con colorantes naturales
+ es,Contiene azucares naturalmente presentes
  es,Contiene azúcares propios de la fruta
+ es,Contiene azúcares propios de los ingredientes.
+ es,Contiene gluten de trigo y posibles trazas de sésamo y leche
+ es,Contiene gluten de trigo y posibles trazas de sésamo y leche.
  es,CONTIENE GLUTEN. CONTIENE INGREDIENTES DE TRIGO. EL MAIZ UTILIZADO EN ESTE PRODUCTO CONTIENE TRAZAS DE SOYA.
- es,contiene lupino
  es,Contiene razas de sésamo y soja.
  es,Contiene sésamo. Puede contener trazas de frutos con cáscara.
  es,CONTIENE TRIGO (GLUTEN) Y DERIVADO DE SOYA.
+ es,Contiene una fuente de fenilalanina
+ es,Contiene una fuente de fenilalanina.
+ es,Contiene-leche-trazas-de-huevo-y-frutos-de-cascara
  es,Contiene-mostaza-y-sulfitos
- es,El-aceite-de-girasol-representa-el-34-del-peso-del-producto
- es,Elaborado en líneas que también procesan lácteos (leche). Contiene suflitos.
+ es,contiene-una-fuente-de-fenilalanina
+ es,E 124 Puede tener efectos negativos sobre la actividad y la atención de los niños
+ es,este-producto-puede-contener-frutos-secos-y-leche
  es,fábrica que procesa comida orgánica y mediterránea.
+ es,fenilalanina
  es,Frutos secos leche y altramuces
  es,Frutos-secos-y-huevo
- es,gluten soya. leche almendras
+ es,gelificante estabilizante
  es,Hueso de ciruela
+ es,Leche de cabra
  es,Leche-y-derivados-apio
- es,maní
- es,Maní
+ es,Melocotón
+ es,moluscos crustáceos leche vaca
+ es,Nata
+ es,Ninguna
  es,No apto para alérgicos a la leche.
+ es,no contiene
  es,No Contiene Trazas
+ es,No declara
+ es,No hay
  es,No indica
- es,No tiene
+ es,Pot contenir traces d'ou i fruits secs
  es,Puede contener cacahuete y frutos secos.Este producto no contiene cereales integrales.
+ es,Puede contener trazas de CACAHUETE DERIVADOS LÁCTEOS Y SÉSAMO
+ es,Puede contener trazas de cereales que contengan gluten
+ es,Puede contener trazas de crustáceos y pesacado.
  es,Puede contener trazas de leche y derivados (incluida lactosa) y apio.
  es,Puede contener trazas de leche y sus derivados (incluida lactosa) y apio.
  es,Puede contener trazas de leche y sus derivados (incluida lactosa).
  es,Puede contener trazas de leche y/o sus derivados incluidos la lactosa.
+ es,Puede contener trazas de lisozima de huevo.
  es,Puede contener trazas de soja y leche (latosa)
+ es,Puede contener trazas de soja y/o semillas de sésamo.
+ es,Puede contener trazas de soja y/o sésamo.
  es,Puede contener trazas deleche y soja.
+ es,Puede-contener-trazas-de-soja-y-de-frutos-de-cascara
+ es,Pueden contener trazas de granos de sésamo.
+ es,semen
+ es,Semillas-de-sesamo-y-o-soja
  es,sesam-und-milcherzeugnisse
  es,sin colorantes sin conservantes sin gluten sin huevo
- es,sin-azucar
+ es,Sin gluten
+ es,Sin-azucar
+ es,Sin-azucares
+ es,sin-gluten
  es,soia sesamo
  es,SOJA HUEVO LECHE
- es,Spuren von Milch
+ es,Trazas de Sesano y Cacahuetes
  es,trigo cebada y soja
+ es,uva
+ fr,100 % Lait cru
+ fr,2
+ fr,21-microgramme-par-litre-de-glyphosate
  fr,30
+ fr,acides gras saturés
+ fr,Acides gras saturés
+ fr,acides saturés
+ fr,alcohol
+ fr,alcoll
+ fr,Alcool sucre de canne infusion et essence de plante d absinthe
+ fr,Allergène
+ fr,Allergène 
  fr,Amidon
  fr,antioxydant
  fr,antioxydant
- fr,arachides et autres produits a coque
- fr,aucune précision
+ fr,arête
+ fr,Arêtes
+ fr,Atelier utilisant lait de vache et de brebis
+ fr,Aucun allergène indiqué
+ fr,Avelã
+ fr,azúcar
+ fr,beaucoup graisse
+ fr,Bergkäse
  fr,Boomnoten
  fr,Ce produit est fabriqué dans un atelier utilisant céléri et moutarde
+ fr,Coca-Cola zero sans sucre
+ fr,Contient
+ fr,Contient
+ fr,contient une source de phénylalanine
  fr,Contient une source de phénylalanine.
  fr,contient-une-source-de-phenylalanine
+ fr,Coquilles
+ fr,d'acides gras saturés
  fr,da-consumarsi-preferibilmente-entro-il-vedi-vetro-rispetta-l-ambiente-il-contenitore-va-smaltito-nel-vetro
+ fr,Dépôt de thé
  fr,derives-lactes
+ fr,e339
+ fr,en valeur Nutri Score
+ fr,en valeur Nutritionnel
+ fr,en valeur nutritionnelle
  fr,Erdnüsse
+ fr,fibres
+ fr,Fromage suisse à pâte mi-dure est par nature sans lactose
  fr,Fruits à coque sans OGM
  fr,fruits à coque soja
- fr,Glucides
+ fr,gingembre
  fr,gluten et leurs
+ fr,Gluten et oeufs
+ fr,gluten lait céleri moutarde
  fr,gluten œufs poissons soja moutarde sésame sulfite
  fr,GMO
  fr,Hühnerei Sesam Erdnüssen Lupinen Schalenfrüchten
  fr,Huile d'arachide
- fr,Huile de palme
+ fr,huile de palme
  fr,illisible
  fr,Jezgrasto voće
+ fr,JORDNØDDER
  fr,Lait d'amande
  fr,lait gluten soja sulfite
- fr,lait soja sesame
- fr,ni colorant
+ fr,néant
+ fr,Nitrates
  fr,Noisette amande soya autres fruits à coque
- fr,noisettes amandes
- fr,noisettes-lait-soja
  fr,noix noisettes
+ fr,noix œufs noisettes amandes lait sésames soja
  fr,noixlait
  fr,non
+ fr,Non
+ fr,noyau
  fr,noyaux
  fr,Noyaux
+ fr,Noyaux ou débris de noyaux
  fr,oeuf gluten lait
  fr,oeuf lait soja sesame
+ fr,Oeuf-et-graines-de-sesame
+ fr,œufs lait sésame
  fr,oeufs-gluten-soja-lait
+ fr,pas d'information
+ fr,Pas mentionné
  fr,Pépins
  fr,Petit-lait en poudre jaune d'oeuf en poudre
+ fr,Petits os
  fr,Peut contenir des traces d'arachides ou de fruits à coques
- fr,peut contenir des traces de 
+ fr,Peut contenir du blé  et des fruits à coque.
  fr,peut-contenir-d-autres-fruits-a-coque-et-du-sesame
  fr,Peut-contenir-des-traces-de-lait-et-soja
+ fr,Peux contenir des traces de noix et de pistaches.
  fr,phenylalanine
+ fr,Phenylalanine
  fr,phénylalanine
  fr,Phénylalanine
  fr,Possibile presenza di noccioli.
  fr,préparée avec 50 g de fruits pour 100 g. Teneur totale en sucres
+ fr,présure animale
  fr,Produkt kann Spuren von Milch und Schalenfrüchten enthalten.
  fr,quantites-negligeables-de-glucides
- fr,résidus de coques
  fr,Rien
  fr,saccharose
  fr,sans gluten
+ fr,Sans gluten
  fr,sans glutin
  fr,sans graisse animale
  fr,Schalenfrüchte
+ fr,Sel
+ fr,selleri
  fr,sels
  fr,Sels
+ fr,sésame et soja
  fr,Sésame oeufs
  fr,sesame-et-sulfites
  fr,soja moutarde
  fr,Source-de-phenylalanine
+ fr,soy soja
+ fr,Stabilisateur E407  E327
+ fr,sucre
  fr,Sucres naturellement présents
+ fr,thé
  fr,Vegan
+ fr,Viande de cheval
  fr,vinaigre
  gl,cacahuetes
- hr,celera
+ gl,Leche
+ hr,badem
  hr,Celera
- hr,gluten u tragovima
- hr,Jaja
- hr,Mlijeka
- hr,orašastog voća
+ it,100
+ it,11100446sgjgdk
  it,acidi grassi saturi
+ it,altra frutta secca
  it,altra-frutta-secca-a-guscio-e-arachidi
  it,cacao
+ it,contiene Glucosio e Galattosio
  it,Fenilalanina
+ it,frammenti di noccioli
  it,frammenti di nocciolo
  it,frutta secca a guscio
- it,nocciole mandorle soia
+ it,glutine frutta secca a guscio
+ it,latte e derivati
+ it,lische
+ it,lupino
+ it,nocciola
  it,noccioli
+ it,Noccioli
  it,nocciolo
- it,Nocciolo
+ it,Polpa di limone
  it,può contenere frammenti di nocciolo.
- it,Può contenere latte e altra frutta a guscio. Senza glutine.
+ it,Può contenere tracce di
+ it,può contenere tracce di frumento arachidi frutta con guscio semi di sesamo soia latticini
+ it,può contenere tracce di frutta
  it,Può contenere tracce di latte e altra frutta a quscio. pelate a fette (3%)
  it,Può contenere tracce di soia frutta a guscio e latte.
  it,può contenere uova frutta a guscio
  it,puo-contenere-glutine-e-tracce-di-frutta-a-guscio
  it,puo-contenere-tracce-di-frutta-a-guscio-lattosio-e-proteine-del-latte
+ it,SEDANO e CEREALI contenenti GLUTINE.
  it,sedano senape
+ it,Sedano-uova
  it,Semi
  it,senza conservanti aggiunti
  it,senza glutine
  it,senza glutine senza conservanti aggiunti
  it,senza-glutine
+ it,senza-glutine-contiene-naturalmente-zuccheri
  it,soia  sesamo
+ it,sulfito
  it,uova semi di sesamo e soia
  it,utilizzo 100% energia eolica
+ it,vedi cartello esposto in reparto
  lu,Tej
- nl,andere-granen-noten-pindas-sesamzaad
+ nb,Kartong
  nl,ei Gluten Granen   Soja
  nl,fenylalanine
+ nl,frutos secos
+ nl,Gemaakt in een bedrijf waar ook noten verwerkt worden. Bevat soja
  nl,Gluten uit andere granen
  nl,Glutenvrij
+ nl,graatjes
  nl,Kan amandelen soja
- nl,Kan sporen bevatten van noten
  nl,kan sporen bevatten van tarwe (gluten)
- nl,kan stukjes pit bevatten
+ nl,Kan-sporen-van-soja-en-sesamzaad-bevatten
+ nl,Neen
  nl,Niet vermeld
  nl,noten soja melk
- nl,noten-pinda-soja-sesamzaad-koemelk
  nl,phénylalanine
  nl,Pinda's
- pl,Laktoza
- pl,Orzechy Arachidowe
- pl,Orzeszki arachidowe
- pl,orzeszki-arachidowe
- pl,Produkt może Zwierać fragmenty lub całe pestki
- pt,Frutos de casca rígida
+ nl,sesam melk soja
+ pt,isento de glúten
  pt,marjolein
  pt,Pode conter leite
- pt,um consumo excessivo pode ter fator relaxamento
+ ro,apa
  ro,Colorant
+ sk,Bubbles
  sl,erdnüssen
  sv,Fenylalanin
  xx,Kunstigt sødestof
-bg,краве-мляко
-bg,сметана
-bg,сол
+ xx,Mælk
+ xx,Phenylalaninquelle
+ca,api
 ca,Avellanes
 ca,cacahuetes
-ca,Cacahuets
 ca,Cacauet
-ca,cacauets
 ca,Cacauets
 ca,crustacis
+ca,Fruita seca
 ca,Fruits amb closca
+ca,fruits de closca
+ca,Fruits de closca
 ca,fruits secs
 ca,Fruits secs de closca
 ca,fruits-amb-closca
-ca,Fruits-amb-closca
-ca,fruits-secs
 ca,frutos de cáscara
 ca,huevo sésamo
 ca,leche
-ca,Llavors de sèsam
 ca,llet
 ca,Llet
+ca,mostassa
 ca,ou
 ca,Ou
+ca,peix
+ca,Peix
 ca,Productes làctics
 ca,productes-làctics
 ca,proteïna de la llet
 ca,Puede contener trazas de frutos secos
-ca,sense-llet
-ca,sense-ou
-ca,sesam
 ca,sèsam
 ca,Sèsam
 ca,sésamo
+ca,soia api sèsam
 ca,soja i fruits de closca
 ca,sulfitos
-ca,sulfits
 cs,ořechy
 cs,sezam
 da,Mjölk
 de,Alkohol
 de,Andere glutenhaltige Getreidearten
-de,anderen Schalenfrüchten
+de,anderem glutenhaltigen Getreide
+de,anderem-glutenhaltigen-getreide
+de,cashewkernen
+de,Cashewkernen
 de,Cashewnuss
 de,céleri
 de,Céleri
+de,Das Produkt kann Spuren von Hühnerei
 de,Enthalten
 de,Erdnussen
 de,Erdnüssen Schalenfrüchten
 de,Fabriqué dans une usine qui utilise aussi des écrous utilisés
+de,fett
+de,Fett
+de,Fettarme H Milch  1
+de,Fisch Krebstiere
+de,Fischen
 de,Fruits à coque
+de,Frutos de cáscara
+de,geringe-mengen-an-fett
+de,Gerste Hafer
+de,gesättigte Fettsäuren
+de,Gesättigte Fettsäuren
+de,gesättigte Fettsäuren Eiweiß
+de,gesattigte-fettsauren
+de,gesättigte-fettsäuren
+de,Gesättigten Fettsäuren
+de,gesättigten-fettsäuren
+de,Geste
+de,Getreide
+de,glutenfrei
+de,glutenhaltige-getreide
+de,Glutenhaltige-getreidearten
 de,glutenhaltiges Getreide
 de,Glutenhaltiges Getreide
 de,Graines de sésame
+de,Hagebutten
 de,Havre
+de,Hefe
 de,Hergestellt in einer Fabrik
+de,Heringe
+de,Hibikus
+de,Himmbeeren
 de,Huhnerei
 de,Hühnerei Eiweiß Schalenfrüchten
+de,Hühnereiern
+de,in dem Kuh- und Ziegenmilch verarbeitet werden.
+de,Kakao
 de,kan-spuren-von-weizen
-de,Kann Spuren von Eiern. Erdnüssen
-de,Kann Spuren von Schalenfrüchten (z.B. Nüssen und Steinfrüchten)
+de,kann
+de,Kann glutenhaltiges Getreide enthalten
+de,Kann Spren enthalten von Nüssen
+de,Kann Spuren von Gluten Milch
+de,kann-anderen-schalenfrüchten-und-erdnüssen-enthalten
 de,Kirschkernteile
 de,konnen-kem
 de,Lupina
-de,Manufactured in a factory that also uses nuts
+de,Manufactured in a factory that also uses nuts)
 de,Mayonnaise
 de,Milch Sellerie
 de,Milch Senf Soja
-de,Milchbestandteile
+de,Milcherzeugnisse Hühnerei
+de,milchprodukte
 de,Milchprodukte
 de,Milchprodukten
 de,Milchprodukten Nüsse
 de,Mjölk
 de,n Erdnüssen
 de,Natriummetabisulfit
+de,Nichts
 de,Nuß
 de,nusse
 de,Nüsse andere Schalenfrüchte
@@ -447,8 +687,13 @@ de,Ohne Konservierungsstoffe
 de,Peel fruits
 de,Peut contenir des traces de fruits à coque
 de,Phenylalanin
+de,Phenylalaninquelle
 de,produkt-kann-spuren-von-weizen
+de,Protein
 de,Råg
+de,Roggen Weizen
+de,salz
+de,Salz
 de,Sauerrahmbutter
 de,schalenfruchte
 de,SCHALENFRÜCHTE (NÜSSE)
@@ -456,101 +701,162 @@ de,Schalenfruchten
 de,Schalenfruchten-nusse
 de,Schalenfüchte
 de,Schalenfürchten
+de,Schalentiere
 de,Schaltenfrüchte
+de,schwefeldioxid-und-sulphite
 de,Seier
 de,Sellerie Soja
+de,Senf  Lupine
 de,Senf Soja
+de,Senf und Weichtieren enthalten.
 de,Sesam Lupine
 de,sesam-nüssen
+de,Sesamerzeugnissen
 de,sesamsaat
+de,Soja  Senf
+de,Soja Sellerie Senf
 de,Soja Senf
+de,soja-sesam
+de,soja-und-senf-enthalten-enthalt-alkohol
+de,Sojabohnen und daraus gewonnene Erzeugnisse
 de,stein-oder-schalenteile-enthalten-sein
 de,Steine
+de,Stevio
 de,Sulfit
+de,Sulphit
+de,Süßlupine
+de,tierisches Lab
+de,Wallnüsse
+de,Weizen Gluten
 de,Weizen Rogge Gerste
+de,Weizenbestandteilen
 de,wezen
+de,Zusatz von Vitaminen und Magnesium
+el,Άλλους καρπούς με κέλυφος
+el,Αραχίδας (αράπικα φιστίκια)
+el,γαλα
+el,λακτόζη
+el,Λακτόζη
+el,Μπορεί να περιέχει ίχνη από 
+el,Ξηροί Καρποί
+el,ξηρούς καρπούς
+el,ξηρούς καρπούς σογια
+el,προϊόντα σόγιας
+el,πρωτεΐνες δημητριακών (γλουτένη)
+el,Σπόρους σησαμιού και προϊόντα αυτών
+el,Φιστίκια
+el,φυστικέλαιο
+en,_pistachios_ (groundnuts)
+en,\037es
 en,Æg
+en,ägg
 en,Ägg
 en,Alune de pădure
 en,amandelen
 en,amandes
 en,Amandes
-en,andere Nüsse
 en,Arahide
 en,Barley ingredients
+en,Bones
+en,caffeine
+en,Caffeine
+en,cereals
 en,Cereals
 en,cocoa butter vanilia
 en,Contains milk
+en,contains sweetener
+en,CONTIENE
+en,cow-milk
+en,CRUSTACEA
 en,crustaceans
+en,Custacea
+en,Das Produkt kann Spuren von Sesam enthalten
+en,Das Produkt kann Spuren von Soja enthalten! Kreuzkümmel
 en,egg milk soy fish
 en,eggs
 en,ei
 en,erdnusse
 en,Erdnüsse
 en,erdnüssen
+en,Ernuss
 en,fish
+en,free-from-dairy-can-be-introduced-as-part-of-a-healthy-balanced-diet-from-1year-of-age-not-suitable-as-a-main-milk-drink-for-children-under-3-a-varied
 en,FRUITS A COQUE
 en,fruits à coque
 en,Fruits à coque
 en,fruits à coques
+en,frutos de cáscara
 en,frutta a guscio
 en,frutta a guscio e derivati
+en,galactose
 en,gluten
-en,Gorczyca
-en,Grain
+en,gluten cereals
 en,graines de sésame
 en,haselnüssen
+en,hasselnötter
 en,havergluten
 en,hazelnoten
+en,huevos
+en,Hühnereigelb
 en,hvede
-en,Jaja
-en,jęczmień
-en,Jezgrasto voće
+en,Kann Spuren von Walnüssen
+en,Kardamom
+en,Koemelkeiwit
+en,Kurkuma
 en,lait
 en,Lait
 en,Latte e glutine
 en,leche
+en,leche y derivados
 en,Łubin
 en,lupin
-en,Mani
+en,Lupinen - und Milcherzeugnissen enthalten.
+en,mandel och sesamfrö
 en,manufactured on equipment that also processes peanut
+en,MAY ALSO CONTAIN
+en,may contain gluten
 en,May contain Nuts
+en,may contain soy
 en,may-contain-traces-of-celery
 en,melk
 en,Migdale
-en,migdaly
 en,milch
+en,Milchprodukte
 en,milk
 en,Milk Products
 en,milk-and-mustard
-en,Mleko
+en,mjölk
+en,Mjölk
 en,Mollusca
 en,molluscs
-en,molluscs)
 en,mustard
+en,nata
 en,Nødder
 en,noisettes
 en,Noisettes
 en,Noix de cajou et tu sésame
 en,Noix de pécan
+en,none
 en,noten
-en,Nötter
+en,Nüsse
+en,nuts &soya
 en,oeufs
+en,Olive pips
 en,Olive stones
-en,oreščki
 en,orge
 en,Orzechy
-en,orzechy laskowe i orzechy nerkowca.
-en,orzeszki arachidowe
+en,other  _dry nuts_ and _egg_
 en,Owies
 en,Pecannüssen Eiern
 en,Peut contenir GLUTEN
+en,Pfeffer
 en,pistachenoten
+en,PIT FRAGMENTS
+en,Pits
 en,Pitten
 en,postacho) y huevo.
+en,products based on milk
 en,Produse din soia
-en,pšenica
-en,pszenica
 en,puede contener trazas de frutos de cscara (almendra
 en,pueden contener trazas de frutos de cáscara
 en,rug
@@ -558,231 +864,304 @@ en,S
 en,schaaldieren
 en,schalenfruchte
 en,Schalenfrüchte
-en,schalenfruchten
 en,schalenfrüchten
 en,Schalenfrüchten
 en,selderij
-en,Seler
 en,Selerie
 en,Selleri
 en,Sellerie
-en,Seme susama
+en,Selleriederivate
 en,semi di sesamo
 en,Senap
 en,Senf
+en,Senföl
 en,Sesam
 en,sesame-seeds
+en,sésamo
 en,sesamzaad
 en,Sezam
+en,Soja- und Lupinenerzeugnissen enthalten.
 en,Soybean Products
 en,soybeans
 en,Spuren von Haselnüssen
+en,STEMS
+en,sucre
 en,Sulohiten
 en,sulphur-dioxide-and-sulphites
 en,Susan
+en,sussmolkepulver
+en,sweet lupine
 en,Tomato
 en,Trace di frutta in guscio
 en,trigo y otros cereales con gluten
 en,uova
+en,valnötter
 en,vis
+en,Walnuss
+en,Walnusserzeugnisse
 en,weekdieren
+en,Wheat (Gluten)
 en,Żyto
-en,фундук
-eo,glutenhaltiges Getreide
+en,αυγό | Milk
+en,βρωμη
+en,ΓΑΛΑ
+en,Γάλα
+en,Γλουτένη (σιτηρά)
+en,καρύδι
+en,κριθάρι
+en,μπορεί να περιέχει ήχνη από σιτάρι
+en,Σησάμι
+en,ΣΟΥΣΑΜΙ
+en,σουσάμι
+en,φουντούκι
 es,40
+es,agua levadura
+es,Amarillo 5
+es,Apio-mostaza
 es,Apio-y-mostaza
 es,aplo
-es,Avellana soja cacahuete
 es,Avena
+es,Azucar-cacao-desgrasado-fecula-de-maiz
 es,Carbochidratos
 es,cebada  soja avena leche
+es,Centeno). Puede contener trazas de avena y cebada y de frutos de cáscara (nueces y avellanas).
 es,Coco
 es,Contiene leche derivados de leche y soya.
+es,Crustaceos-frutos-de-cascara
 es,Elborado por alimentos agua clara S.A parque industrial latinoamericano
 es,Erdnüsse
+es,Fenilalanina
 es,Fósforo
+es,Fruits de closca
+es,Fruta-de-cascara
 es,FRUTOS DE CASCARA CACAHUETES Y SOJA.
 es,frutos de cáscara y otro
+es,GLUTEN DE TRIGO
 es,Hecho en bolivia
 es,Hierro
 es,Huesos
 es,Leche (lactosa) y gluten.
+es,Leche de oveja
 es,Leche frutos de cáscara y soja
+es,Leche Soja
+es,Leche y sus derivados (incluida la lactasa) y soja.
+es,Leche y sus derivados (incluida la lactosa)
+es,Leche y sus derivados (incluida la lactosa) y soja.
 es,Leche y sus derivados (incluida lactosa).
 es,Leche y sus derivados y gluten.
 es,Libre de Gluten
-es,maní
 es,Maní
+es,Marisco
 es,metabisulfito
 es,Metabisulfito
-es,nueces y deribados
-es,nueces y sus productos.
+es,Pescado-crustaceos-moluscos-frutos-de-cascara-y-apio
 es,Proteínas
 es,Puede contener trazas de leche y derivados (incluida lactosa) y apio.
+es,Puede contener trazas de sésamo y/o soja.
+es,Puede contener trazas de soja y/o sésamo.
 es,Puede contener trazas detrigo
-es,Puede contener trigo cebada
+es,Puede tener semillas de sésamo y/o soja.
 es,Puede-contenertrazas-de-gluten
+es,Rutos de cáscara
+es,Sal
 es,Schalenfrüchte
+es,Semidesnatada
+es,Semillas de soja
+es,SESAM0
+es,Sesamo soja
+es,Sésamo soja
+es,Sin-gluten
+es,Sin-lactosa
 es,Soja y leche (lactosa)
 es,Soja y leche (lactosa).
+es,Sojabönor
 es,Soya y Trigo (Gluten).
+es,Sulfitos-y-mostaza
+es,TRAMUZ
+es,Vegano
 ew,Frutos de cáscara
 fr,1
+fr,1-teneur-reste-en-lactose
 fr,10
 fr,10 g
+fr,33
+fr,40 g
+fr,6 % d'alcool
 fr,acidifiant
+fr,ÆG og MÆLK
 fr,alergenos-trazas-de-frutos-de-cascara
+fr,Arêtes
+fr,avena
 fr,Bergkäse
+fr,céleri moutarde graines de sésame
 fr,Céleri moutarde soja
 fr,céréales gluten soja molusque et lupin
+fr,Ceufs
+fr,contient de l'
 fr,Contient du gluten. traces éventuelles de soja
+fr,d'euf
+fr,de fruits à coque (CH
+fr,de lupine et de fruits à coque.
 fr,De protéines d'oeufs et de noix.
-fr,de-sesame-et-de-lupin
-fr,des-fruits-a-coque-et-des-sulfites-peut-contenir-des-traces-de-soja
+fr,de protéines et de sel
 fr,dioxide
 fr,Erdnüsse
 fr,Erdnüssen
+fr,Esprit et essence de plantes colorant alimentaire bleu brillant & FCF
 fr,frolent
+fr,fruit à coque moutarde lupin
+fr,Fruits à coqu
+fr,glucides
+fr,Gluten Fruits à coques
+fr,Graines
+fr,graines-de-tournesol
 fr,Granen
+fr,Huile d'arachide
 fr,Inconnues (non visibles sur l'image)
 fr,Ingrédient issu de l'orge
+fr,Kan indeholde spor af HASSELNØDDER
+fr,kann-spuren-von-lupinen-und-soja-enthalten
 fr,Lait d'amande
 fr,lait oeuf céleri soja moutarde
 fr,Lait sésame
-fr,Lait soja cacahuète fruits à coques
+fr,leche
+fr,Lysozyme d'oeuf
+fr,MANDLER
+fr,matières grasses
+fr,Matières grasses
+fr,melk
+fr,ne convient pas aux enfants
 fr,noix arachides
+fr,noix soja
 fr,noix-arachides
 fr,Noix-non-traitees
 fr,noyaux
 fr,Nüsse
 fr,oats wheat
+fr,oeud
+fr,oeuf céleri
 fr,oeuf lactose
+fr,oeuf orge
 fr,oeuf sésame soja fruits à coques arachide
-fr,oeufs arachides sésame
+fr,oeuf-soja-lait-fruits-a-coque-sesame
+fr,oeufs soja
+fr,ou
 fr,ouef
+fr,Oxid siricity (souffre)
+fr,phenylalanine
+fr,Phénylalanine
 fr,Pinda-s
 fr,prodotto-e-commercializzato-da-a-gandola-c-s-p-a-ss-11-n-312-ponte-s-marco-bs-conservare-fuori-dal-frigorifero-a-temperatura-ambiente
+fr,Protéine
+fr,protéines
+fr,protéines de lait de vache
+fr,quantité négligeable de matières grasses
 fr,Sans colorant artificiel
-fr,sans conservateur
 fr,schalenfruchte
 fr,Schalenfrüchte
-fr,schalenfruchten
 fr,Schalenfrüchten
 fr,Seigle orge avoine sésame
+fr,sel
+fr,Sel
+fr,sesam
+fr,SESAM
 fr,sésame soja
 fr,sodium
 fr,soia e sedano.
 fr,soja fruits à coque
 fr,Sojaerzeugnissen
 fr,sucre
-fr,Sucres protéines
 fr,sucres-et-proteines
 fr,Susam
+fr,Traces éventuelles de autres céréales contenant du gluten (avoine)
 fr,Une consommation excessive peut avoir des effets laxatifs
+fr,VALNØDDER
 fr,Vinaigre d alcool
 gl,frutos de cáscara
+gl,frutos-de-cáscara
 gl,leche
-hr,bademe
-hr,drugo orašasto voće
+hr,bjelanjak jajeta
+hr,gluten u tragovima
 hr,Gorušice
-hr,jaja
 hr,Jaja
-hr,ječam
 hr,kikiriki
-hr,Liješniake
-hr,lješnjake
-hr,Lješnjake
+hr,lješnjak
 hr,Mlijeka (laktoze)
 hr,mlijeko
-hr,Mlijeko
-hr,MLIJEKO
-hr,noisettes
-hr,oeufs
-hr,orašasti plodovi
-hr,Orašastih plodova
-hr,orašasto voće
-hr,pšenica
-hr,pšeničnog glutena
 hr,Pšeničnog glutena
-hr,pšenicu
-hr,Pšenicu
-hr,PŠENICU
-hr,ribe
-hr,sezam
-hr,sezama
 hr,Sezama
-hr,soje
 hr,Soje
-hr,sulfita
+hr,sojin lecitin
 it,(derivati dal vino)
 it,100
+it,alcool etilico
 it,altra-frutta-a-guscio-e-arachidi
+it,anacardi
 it,Arachidi e prodotti a base di arachidi.
 it,avena
 it,carni
 it,cereali
 it,cereali contenenti glutine
 it,contiene-glutine-e-latte-puo-contenere-soia
+it,di frutta a guscio e di altri cereali contenenti glutine.
 it,fibre
 it,frammenti di carapace
 it,frutta in guscio
+it,frutta secca a guscio
+it,Frutta secca a guscio
+it,frutti-a-guscio
 it,grano farro
 it,grano khorasan
+it,Grano/Frumento Gnocchi - Contiene
 it,grassi
 it,Il prodotto può contenere tracce di
 it,latte-e-derivati
+it,Lupinen - und Milcherzeugnissen
 it,lupino
 it,mandorle nocciole noci di pecan noci di acagiu è pistacchi
 it,milk nuts sesame seeds
 it,nocciola frutta a guscio
 it,nocciole (Corylus avellana); Latte e Soia
-it,nocciole mandorle
-it,nocciole o altra frutta guscio
-it,noccioli
+it,noci avena
+it,pistacchio
+it,Pistacchio
 it,Prodotto in uno stabilimento che utilizza anche
 it,Prodotto in uno stabilimento che utilizza anche latte
 it,proteine
 it,proteine-del-latte
-it,quinoa e chia
+it,Può contenere tracce di frutta secca a guscio e latte
 it,sale
 it,senza glutine
 it,senza-glutine
-it,soia e frutta a guscio. Il prodotto contiene glutine.
 it,soia-e-derivati
 it,Uov
+ja,Milch
 nb,Fruits à coque
 nb,Graines de sésame
-nl,andere schaal vruchten
 nl,apio
 nl,ei en melk bevatten.
 nl,Fruits à coque
 nl,frutos secos
 nl,gerstgluten
-nl,graan pinda's noten
+nl,Gerstgluten
 nl,Graines de sésame
+nl,Kan sporen van glutenbevattende granen
 nl,Melkvrij
+nl,roggemeel
 nl,schaalvruchten
 nl,sesamo
+nl,soja en mosterd bevatten.
+nl,soja mosterd
 nl,Tarwee
 nl,Tarwegluten
-pl,Jęczmienia
-pl,Orkiszu
-pl,Orzeszki arachidowe
-pl,Orzeszki laskowe
-pl,orzeszki-arachidowe
-pl,Orzeszki-arachidowe
-pl,orzeszki-laskowe
-pl,Orzeszków
-pl,Owsa
-pl,Pähkleid
-pl,Pszenicy
-pl,Żyta
 pt,oregano
+pt,whole milk
 ro,Îndulcitori
 sl,milch
 sl,sesamsamen
-sr,Lešnik
 sv,ägg jordnötter nötter
+sv,Fenylalanin
+sv,Fenylanin
 sv,Fruits à coque
 sv,och sesamfrön
 tr,Haşhaş

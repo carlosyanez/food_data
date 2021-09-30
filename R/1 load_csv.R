@@ -3,6 +3,7 @@ library(tidyverse)
 library(fs)
 library(here)
 library(DBI)
+library(dbplyr)
 
 #create csv dir
 dir_create(here("files"))
@@ -41,7 +42,8 @@ categories <- c(
   "Microwave%20meals",
   "Pasta%20dishes",
   "Refrigerated%20meals",
-  "Breads"
+  "Breads",
+  "Frozen%20desserts"
 )
 
 selected_attributes <- c(
@@ -107,8 +109,7 @@ files <- dir_ls(here("files"))
 
 uploaded_files <- here("db", "tracker.txt")
 if (file.exists(uploaded_files)) {
-  u <- read_csv(uploaded_files, col_names = FALSE)[1, ] %>% pull()
-  prexisting <- sum(files %in% u)
+  u <- read_csv(uploaded_files, col_names = FALSE)[,1] %>% pull(.)
   files <- files[!(files %in% u)]
   
 } else{
@@ -121,54 +122,64 @@ if (file.exists(uploaded_files)) {
 #first file
 if (prexisting == 0) {
   df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
-        select(all_of(c(selected_attributes, "search_country", "search_category")))
-  
-  
-# dbWriteTable(con, "foods", df, overwrite = TRUE)
+        select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
+        filter(!is.na(ingredients_text)) 
+
+ 
+  dbWriteTable(con, "foods", df, overwrite = TRUE)
   write(files[1], uploaded_files, append = TRUE)
   j <- 2
 } else{
   j <- 1
 }
 
+foods <- tbl(con, "foods") 
+if(length(files)>0){
 #others, appending if they are not there yet
 for (i in j:length(files)) {
   
-  new_df <- read_csv(files[i], col_types = cols(.default = "c")) %>%
-            select(all_of(c(selected_attributes, "search_country", "search_category")))
   
-  dupes <- df %>% inner_join(new_df %>% select(code),
-                             by="code")
-  
-  df_no_dupes <- df %>% anti_join(dupes,by="code")
-  rm(df)
-  
-  if(length(colnames(new_df))>1){
+  new_df <- read_csv(files[i], col_types = cols(.default = "c")) 
+
+  if(sum(colnames(new_df) %in% selected_attributes)==19){
     
-  new_df <- bind_rows(new_df,dupes)
+   new_df <- new_df %>%
+              select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
+              filter(!is.na(ingredients_text)) 
+    
+   dupes <- foods %>% 
+           select(code,search_category,search_country) %>%
+           collect() %>%
+           filter(code %in% new_df$code) %>%
+           rename("cat2"="search_category","country2"="search_country")
   
-  #collapse search_category
+   if(nrow(dupes)>0){
+    dbWriteTable(con, "dupes", dupes, overwrite = TRUE)
+    dbExecute(con,"DELETE FROM foods WHERE code in (SELECT code from dupes)")
+    
+    new_df <- new_df %>%
+              left_join(dupes,
+                        by="code") %>%
+              mutate(
+                    search_category=if_else(str_length(cat2)>0 & is.na(str_extract(search_category,cat2)),
+                                             str_c(cat2,", ",search_category),
+                                             search_category),
+                    search_country=if_else(str_length(country2)>0 & !is.na(str_extract(search_country,country2)),
+                                             str_c(country2,", ",search_country),
+                                             search_country)
+                     ) %>%
+              select(-cat2,-country2)
+    
+     dbRemoveTable(con,"dupes")    
   
-  cats <- new_df %>%
-    group_by(code) %>%
-    summarise(search_category = str_c(search_category, collapse = ","),
-              .groups = "drop")
-  
-  new_df <- new_df %>%
-    select(-search_category) %>%
-    left_join(cats, by = "code")
-  
-  df <- bind_rows(df_no_dupes,new_df)
-  
+   }
+   
+   dbWriteTable(con, "foods", new_df, append = TRUE)
+   
+   write(files[i], uploaded_files, append = TRUE)
   }
-  write(files[i], uploaded_files, append = TRUE)
-  
 }
-
-
-dbWriteTable(con, "foods", df, overwrite = TRUE)
-
-
+}
 
 dbDisconnect(con)
 rm(list = ls())

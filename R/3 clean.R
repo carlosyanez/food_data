@@ -1,18 +1,13 @@
 
-
 library(tidyverse)
 library(fs)
 library(here)
 library(DBI)
 library(dbplyr)
-library(countrycode)
-library(cld3)
-
 
 con <- dbConnect(RSQLite::SQLite(), here("db", "food.sqlite"))
-con1 <-
-  dbConnect(RSQLite::SQLite(), here("db", "food_refined.sqlite"))
-food_table <- tbl(con, "foods")
+con1 <-dbConnect(RSQLite::SQLite(), here("db", "food_refined.sqlite"))
+food_table <- tbl(con, "foods") %>% collect()
 
 
 allergens_edited <-
@@ -34,14 +29,28 @@ to_remove <- allergens_edited %>%
   pull(allergen) %>%
   str_c(sep = "|")
 
+previous_clean <- ("foods" %in% dbListTables(con1))
 
-food_edited <-
-  food_table %>%
-  collect()
+if(previous_clean){
+  
+  
+  present <- tbl(con1, "foods") %>%
+             select(code) %>%
+             collect()
+  
+  food_edited <-  food_table %>%
+                  filter(code %in% present$code) %>%
+                  collect()
+  
+  
+}else{
+  food_edited <-  food_table %>%
+                   collect()
+}
 
 food_edited <- food_edited %>%
-  mutate(allergens = str_remove_all(allergens, to_remove),
-         traces = str_remove_all(traces, to_remove)) %>%
+  mutate(allergens = str_remove_all(allergens, str_c(to_remove,collapse="|")),
+         traces = str_remove_all(traces, str_c(to_remove,collapse="|"))) %>%
   filter(!is.na(ingredients_text)) %>%
   filter(str_length(ingredients_text) > 0) %>%
   mutate(
@@ -49,18 +58,14 @@ food_edited <- food_edited %>%
     search_category = str_replace_all(search_category, "\\&", " ")
   )
 
-
-
-
 result_table <- tibble()
 
 for (allergen_i in allergen_list) {
+  message(allergen_i)
   allergen_i_options <- allergens_edited %>%
     filter(standard_allergen == allergen_i) %>%
     distinct(allergen) %>%
     pull(allergen)
-  
-  
   
   for (j in 1:nrow(food_edited)) {
     present1 <-
@@ -88,52 +93,25 @@ food_edited <- food_edited %>%
       pivot_wider(code, names_from = allergen, values_from = value),
     by = "code"
   ) %>%
-  mutate(across(where(is.logical), ~ if_else(is.na(.x), FALSE, .x))) %>%
-  filter(`tree nuts` == FALSE & peanuts == FALSE) %>%
-  select(-peanuts, -`tree nuts`)
+  mutate(across(where(is.logical), ~ if_else(is.na(.x), FALSE, .x))) 
+
+if("tree nuts" %in% colnames(food_edited)){
+  food_edited <- food_edited %>%
+    filter(`tree nuts` == FALSE) %>%
+    select(-`tree nuts`)
+}
+if("peanuts" %in% colnames(food_edited)){
+  food_edited <- food_edited %>%
+    filter(peanuts== FALSE) %>%
+    select(-peanuts)
+}
 
 
-
-countries <- food_edited %>%
-  mutate(countries = str_remove_all(countries, "[a-z][a-z]\\:")) %>%
-  separate_rows(countries, sep = ",") %>%
-  mutate(
-    countries = str_to_title(str_trim(countries)),
-    countries = if_else(str_length(countries) == 2, str_to_lower(countries), countries)
-  ) %>%
-  filter(!is.na(countries)) %>%
-  distinct(countries)
-
-countries$std <- countryname(countries$countries)
-
-countries <- countries %>%
-  mutate(std = if_else(
-    is.na(std),
-    countrycode(countries, origin = 'iso2c', destination = 'cldr.short.en'),
-    std
-  ))
-
-food_edited2 <- food_edited %>%
-  select(-countries) %>%
-  left_join(
-    food_edited %>%
-      mutate(countries = str_remove_all(countries, "[a-z][a-z]\\:")) %>%
-      separate_rows(countries, sep = ",") %>%
-      left_join(countries, by = "countries") %>%
-      select(-countries) %>%
-      rename("countries" = "std") %>%
-      mutate(countries = str_trim(countries)) %>%
-      distinct() %>%
-      group_by(code) %>%
-      summarise(
-        countries = str_c(countries, collapse = ", "),
-        .groups = "drop"
-      ),
-    by = "code"
-  ) %>%
+food_edited <- food_edited %>%
+  mutate(countries=search_country) %>%
   mutate(across(
     where(is_character) &
-      !contains("image_url"),
+      !contains("url"),
     ~ str_remove_all(.x, "[a-z][a-z]\\:")
   )) %>%
   filter(!is.na(ingredients_text)) %>%
@@ -143,51 +121,8 @@ food_edited2 <- food_edited %>%
     search_category = str_remove_all(search_category, "%20")
   )
 
-#food_edited2$ingr_lang <- detect_language(food_edited2$ingredients_text)
 
-dbWriteTable(con1, "foods", food_edited2, overwrite = TRUE)
-
-
-#get brands, packaging
-
-
-food_edited2 %>%
-  distinct(brands) %>%
-  separate_rows(brands, sep = ",") %>%
-  distinct(brands) %>%
-  filter(!is.na(brands)) %>%
-  dbWriteTable(con1, "brands", ., overwrite = TRUE)
-
-food_edited2 %>%
-  distinct(packaging) %>%
-  separate_rows(packaging, sep = ",") %>%
-  distinct(packaging) %>%
-  filter(!is.na(packaging)) %>%
-  dbWriteTable(con1, "pockaging", ., overwrite = TRUE)
-
-
-food_edited2 %>%
-  distinct(countries) %>%
-  separate_rows(countries, sep = ",") %>%
-  mutate(countries = str_trim(countries)) %>%
-  distinct(countries) %>%
-  filter(!is.na(countries)) %>%
-  dbWriteTable(con1, "countries", ., overwrite = TRUE)
-
-food_edited2 %>%
-  distinct(categories) %>%
-  separate_rows(categories, sep = ",") %>%
-  distinct(categories) %>%
-  filter(!is.na(categories)) %>%
-  dbWriteTable(con1, "categories", ., overwrite = TRUE)
-
-food_edited2 %>%
-  distinct(search_category) %>%
-  separate_rows(search_category, sep = ",") %>%
-  distinct(search_category) %>%
-  filter(!is.na(search_category)) %>%
-  dbWriteTable(con1, "search_category", ., overwrite = TRUE)
-
+dbWriteTable(con1, "foods", food_edited, overwrite = !previous_clean,append=previous_clean)
 
 dbDisconnect(con1)
 dbDisconnect(con)

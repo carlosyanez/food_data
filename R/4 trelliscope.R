@@ -13,29 +13,27 @@ con <-
 foods_local <- tbl(con, "foods") %>%
   collect() %>%
   mutate(panel = img_panel(image_url)) %>%
-  select(-search_country, categories) %>%
-  rename("categories" = "serach_category") %>%
-  mutate(across(where(is.numeric), ~ as.character(if_else(.x == 1, "Yes", "No"))))
+  select(-categories,-countries) %>%
+  rename("categories" = "search_category",
+         "countries"="search_country") %>%
+  mutate(across(where(is.numeric), ~ as.character(if_else(.x == 1, "Yes", "No"))),
+         n=row_number())
+
 
 dir_create(here("html"))
 
+
 ts <- trelliscope(
   foods_local,
-  name = "nut free foods",
+  name = str_c("nut free foods"),
   desc = "Nut free foods from openfoodfacts.org",
   state = list(
     labels = c(
       "product_name",
       "brands",
       "ingredients_text",
-      "labels",
-      "allergens",
-      "traces",
-      "nutriscore_grade",
-      "nova_group",
-      "pnns_groups_1",
-      "pnns_groups_2",
-      "stores",
+      "countries",
+      "categories",
       "url"
     )
   ),
@@ -43,6 +41,7 @@ ts <- trelliscope(
   ncol = 8,
   path = here("html")
 )
+
 
 saveWidget(
   ts,
@@ -52,3 +51,4 @@ saveWidget(
   background = "white",
   title = "Nut free foods"
 )
+rm(list = ls())

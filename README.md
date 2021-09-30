@@ -1,5 +1,3 @@
-# Nut free food
-
 Collection of peanut and tree nut free foods from selected countries.
 
 Data obtained from [Open Food Facts](https://world.openfoodfacts.org).
