@@ -8,4 +8,4 @@ Dashboard created with [trelliscope](https://hafen.github.io/trelliscopejs/).
 
 Provided without any guarantees. Use at your own risk.
 
-**[Trelliscope Dashboard here](html/index.html)**
+** [Trelliscope Dashboard here](html/index.html) **
