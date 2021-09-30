@@ -1,8 +1,3 @@
-#library(mongolite)
-#food <- mongo("food", url = "mongodb://mongo_root:mongo_root()@localhost:28017/mongodb?authSource=admin&readPreference=primary&ssl=false")
-#a<-food$find('{"country" : "en:Australia"}',limit=5)
-
-#full DB too big for my laptop
 
 library(tidyverse)
 library(fs)
@@ -38,14 +33,14 @@ categories <- c(
   "Sauces",
   "Condiments",
   "Beverages",
-  "Cocoa&and&its&products",
+  "Cocoa%20and%20its%20products",
   "Flatbreads",
-  "Canned&foods",
+  "Canned%20foods",
   "Dairies",
-  "Frozen&foods",
-  "Microwave&meals",
-  "Pasta&dishes",
-  "Refrigerated&meals",
+  "Frozen%20foods",
+  "Microwave%20meals",
+  "Pasta%20dishes",
+  "Refrigerated%20meals",
   "Breads"
 )
 
@@ -126,11 +121,10 @@ if (file.exists(uploaded_files)) {
 #first file
 if (prexisting == 0) {
   df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
-    select(all_of(
-      c(selected_attributes, "search_country", "search_category")
-    ))
+        select(all_of(c(selected_attributes, "search_country", "search_category")))
   
-  dbWriteTable(con, "foods", df, overwrite = TRUE)
+  
+# dbWriteTable(con, "foods", df, overwrite = TRUE)
   write(files[1], uploaded_files, append = TRUE)
   j <- 2
 } else{
@@ -139,33 +133,40 @@ if (prexisting == 0) {
 
 #others, appending if they are not there yet
 for (i in j:length(files)) {
-  new_df <- read_csv(files[i], col_types = cols(.default = "c"))
-  if(length(colnames(foods_local))>1){
-  df <- df %>%
-    bind_rows(new_df %>%
-                select(all_of(
-                  c(selected_attributes, "search_country", "search_category")
-                )))
+  
+  new_df <- read_csv(files[i], col_types = cols(.default = "c")) %>%
+            select(all_of(c(selected_attributes, "search_country", "search_category")))
+  
+  dupes <- df %>% inner_join(new_df %>% select(code),
+                             by="code")
+  
+  df_no_dupes <- df %>% anti_join(dupes,by="code")
+  rm(df)
+  
+  if(length(colnames(new_df))>1){
+    
+  new_df <- bind_rows(new_df,dupes)
   
   #collapse search_category
   
-  cats <- df %>%
+  cats <- new_df %>%
     group_by(code) %>%
     summarise(search_category = str_c(search_category, collapse = ","),
               .groups = "drop")
   
-  df <- df %>%
+  new_df <- new_df %>%
     select(-search_category) %>%
     left_join(cats, by = "code")
+  
+  df <- bind_rows(df_no_dupes,new_df)
+  
   }
   write(files[i], uploaded_files, append = TRUE)
-  
-  
   
 }
 
 
-dbWriteTable(con, "foods", df, append = TRUE)
+dbWriteTable(con, "foods", df, overwrite = TRUE)
 
 
 

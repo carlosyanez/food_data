@@ -140,7 +140,7 @@ food_edited2 <- food_edited %>%
   mutate(
     product_name = if_else(is.na(product_name), ingredients_text, product_name),
     ingredients_text = str_to_lower(str_replace_all(ingredients_text, "_", " ")),
-    search_category = str_remove_all(search_category, "\\&")
+    search_category = str_remove_all(search_category, "%20")
   )
 
 #food_edited2$ingr_lang <- detect_language(food_edited2$ingredients_text)
