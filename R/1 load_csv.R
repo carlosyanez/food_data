@@ -21,7 +21,8 @@ countries <-c("Austria","Switzerland","Germany","Greece",
 categories <- c("Snacks","Breakfasts","Spreads",
                 "Sauces","Condiments","Beverages",
                 "Cocoa&and&its&products","Flatbreads",
-                "Canned&foods","Dairies","Frozen&foods")
+                "Canned&foods","Dairies","Frozen&foods",
+                "Microwave&meals","Pasta&dishes","Refrigerated&meals")
 
 selected_attributes <- c("product_name","packaging","brands",
                          "categories","origins","labels",
@@ -81,7 +82,7 @@ if(file.exists(uploaded_files)){
 
 #first file
 if(prexisting==0){
-df <- read_csv(files[1], col_types = cols(.default = "c")) %>% select(all_of(selected_attributes))
+df <- read_csv(files[1], col_types = cols(.default = "c")) %>% select(all_of(c(selected_attributes,"search_country","search_category")))
 dbWriteTable(con,"foods",df,overwrite=TRUE)
 write(files[1],uploaded_files,append=TRUE)
 j<-2
@@ -92,7 +93,7 @@ j<-2
 #others, appending if they are not there yet
 for(i in j:length(files)){
   df <- read_csv(files[i],col_types = cols(.default = "c")) %>%
-        select(all_of(selected_attributes)) %>%
+        select(all_of(c(selected_attributes,"search_country","search_category"))) %>%
         anti_join(dbReadTable(con,"foods"),by="code")
   dbWriteTable(con,"foods",df, append=TRUE) 
   write(files[i],uploaded_files,append=TRUE)

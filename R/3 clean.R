@@ -117,7 +117,6 @@ food_edited2<- food_edited %>%
          ingredients_text=str_to_lower(str_replace_all(ingredients_text,"_"," "))
          ) 
 
-
 #food_edited2$ingr_lang <- detect_language(food_edited2$ingredients_text)
 
 dbWriteTable(con1,"foods",food_edited2,overwrite=TRUE)
