@@ -13,93 +13,161 @@ library(DBI)
 dir_create(here("files"))
 
 
-countries <-c("Austria","Switzerland","Germany","Greece",
-              "Belgium","Netherlands","Australia",
-              "Slovakia","Czechia","Italy","Spain",
-              "Denmark","Sweden",
-              "Norway","Ireland")
-categories <- c("Snacks","Breakfasts","Spreads",
-                "Sauces","Condiments","Beverages",
-                "Cocoa&and&its&products","Flatbreads",
-                "Canned&foods","Dairies","Frozen&foods",
-                "Microwave&meals","Pasta&dishes","Refrigerated&meals")
+countries <- c(
+  "Austria",
+  "Switzerland",
+  "Germany",
+  "Greece",
+  "Belgium",
+  "Netherlands",
+  "Australia",
+  "Slovakia",
+  "Czechia",
+  "Italy",
+  "Spain",
+  "Denmark",
+  "Sweden",
+  "Norway",
+  "Ireland"
+)
 
-selected_attributes <- c("product_name","packaging","brands",
-                         "categories","origins","labels",
-                         "countries",
-                         "ingredients_text","allergens","traces",
-                         "nutriscore_grade","nova_group","pnns_groups_1",
-                         "pnns_groups_2","stores",
-                         "main_category","image_url",
-                         "code","url")
+categories <- c(
+  "Snacks",
+  "Breakfasts",
+  "Spreads",
+  "Sauces",
+  "Condiments",
+  "Beverages",
+  "Cocoa&and&its&products",
+  "Flatbreads",
+  "Canned&foods",
+  "Dairies",
+  "Frozen&foods",
+  "Microwave&meals",
+  "Pasta&dishes",
+  "Refrigerated&meals",
+  "Breads"
+)
 
-search_grid <- expand_grid(countries,categories)
+selected_attributes <- c(
+  "product_name",
+  "packaging",
+  "brands",
+  "categories",
+  "origins",
+  "labels",
+  "countries",
+  "ingredients_text",
+  "allergens",
+  "traces",
+  "nutriscore_grade",
+  "nova_group",
+  "pnns_groups_1",
+  "pnns_groups_2",
+  "stores",
+  "main_category",
+  "image_url",
+  "code",
+  "url"
+)
 
-for(i in 1:nrow(search_grid)){
+search_grid <- expand_grid(countries, categories)
+
+for (i in 1:nrow(search_grid)) {
   message(i)
-  country    <- search_grid[i,]$countries
-  category   <- search_grid[i,]$categories
-  filename   <- here("files",str_c(country,"-",category,".csv"))
+  country    <- search_grid[i, ]$countries
+  category   <- search_grid[i, ]$categories
+  filename   <- here("files", str_c(country, "-", category, ".csv"))
+  
+  if (!file_exists(filename)) {
+    download_string <-
+      str_c(
+        "https://world.openfoodfacts.org/cgi/search.pl?action=process",
+        "&tagtype_0=categories&tag_contains_0=contains&tag_0=",
+        category,
+        "&tagtype_1=categories&tag_contains_1=does_not_contain&tag_1=Nuts",
+        "&tagtype_2=categories&tag_contains_2=does_not_contain&tag_2=peanuts",
+        "&tagtype_3=allergens&tag_contains_3=does_not_contain&tag_3=nuts",
+        "&tagtype_4=allergens&tag_contains_4=does_not_contain&tag_4=peanuts",
+        "&tagtype_5=traces&tag_contains_5=does_not_contain&tag_5=nuts",
+        "&tagtype_6=traces&tag_contains_6=does_not_contain&tag_6=peanuts",
+        "&tagtype_7=countries&tag_contains_7=contains&tag_7=",
+        country,
+        "&sort_by=unique_scans_n&page_size=20&download=on&format=csv"
+      )
+    download.file(download_string, filename)
     
-  if(!file_exists(filename)){
-       download_string <- str_c("https://world.openfoodfacts.org/cgi/search.pl?action=process",
-                           "&tagtype_0=categories&tag_contains_0=contains&tag_0=",category,
-                           "&tagtype_1=categories&tag_contains_1=does_not_contain&tag_1=Nuts",
-                           "&tagtype_2=categories&tag_contains_2=does_not_contain&tag_2=peanuts",
-                           "&tagtype_3=allergens&tag_contains_3=does_not_contain&tag_3=nuts",
-                           "&tagtype_4=allergens&tag_contains_4=does_not_contain&tag_4=peanuts",
-                           "&tagtype_5=traces&tag_contains_5=does_not_contain&tag_5=nuts",
-                           "&tagtype_6=traces&tag_contains_6=does_not_contain&tag_6=peanuts",
-                           "&tagtype_7=countries&tag_contains_7=contains&tag_7=",country,
-                           "&sort_by=unique_scans_n&page_size=20&download=on&format=csv")
-      download.file(download_string,filename)
-      
-      read_csv(filename) %>%
-        mutate(search_category=category,search_country=country) %>%
-        write_csv(filename)
-      
-      Sys.sleep(60) 
+    read_csv(filename) %>%
+      mutate(search_category = category, search_country = country) %>%
+      write_csv(filename)
+    
+    Sys.sleep(60)
   }
 }
 
 dir_create(here("db"))
-sqlite_file <- here("db","food.sqlite")
+sqlite_file <- here("db", "food.sqlite")
 con <- dbConnect(RSQLite::SQLite(), sqlite_file)
 files <- dir_ls(here("files"))
 
-uploaded_files <- here("db","tracker.txt")
-if(file.exists(uploaded_files)){
-  u <- read_csv(uploaded_files,col_names = FALSE)[1,] %>% pull()
+uploaded_files <- here("db", "tracker.txt")
+if (file.exists(uploaded_files)) {
+  u <- read_csv(uploaded_files, col_names = FALSE)[1, ] %>% pull()
   prexisting <- sum(files %in% u)
   files <- files[!(files %in% u)]
   
-}else{
+} else{
   file_create(uploaded_files)
-  prexisting <-0
+  prexisting <- 0
 }
-  
+
 
 
 #first file
-if(prexisting==0){
-df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
-      select(all_of(c(selected_attributes,"search_country","search_category")))
-
-dbWriteTable(con,"foods",df,overwrite=TRUE)
-write(files[1],uploaded_files,append=TRUE)
-j<-2
-}else{
-  j<-1
+if (prexisting == 0) {
+  df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
+    select(all_of(
+      c(selected_attributes, "search_country", "search_category")
+    ))
+  
+  dbWriteTable(con, "foods", df, overwrite = TRUE)
+  write(files[1], uploaded_files, append = TRUE)
+  j <- 2
+} else{
+  j <- 1
 }
 
 #others, appending if they are not there yet
-for(i in j:length(files)){
-  df <- read_csv(files[i],col_types = cols(.default = "c")) %>%
-        select(all_of(c(selected_attributes,"search_country","search_category"))) %>%
-        anti_join(dbReadTable(con,"foods"),by="code")
-  dbWriteTable(con,"foods",df, append=TRUE) 
-  write(files[i],uploaded_files,append=TRUE)
+for (i in j:length(files)) {
+  new_df <- read_csv(files[i], col_types = cols(.default = "c"))
+  if(length(colnames(foods_local))>1){
+  df <- df %>%
+    bind_rows(new_df %>%
+                select(all_of(
+                  c(selected_attributes, "search_country", "search_category")
+                )))
+  
+  #collapse search_category
+  
+  cats <- df %>%
+    group_by(code) %>%
+    summarise(search_category = str_c(search_category, collapse = ","),
+              .groups = "drop")
+  
+  df <- df %>%
+    select(-search_category) %>%
+    left_join(cats, by = "code")
+  }
+  write(files[i], uploaded_files, append = TRUE)
+  
+  
+  
 }
 
+
+dbWriteTable(con, "foods", df, append = TRUE)
+
+
+
 dbDisconnect(con)
-rm(list=ls())
+rm(list = ls())
