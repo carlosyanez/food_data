@@ -31,7 +31,7 @@ selected_attributes <- c("product_name","packaging","brands",
                          "nutriscore_grade","nova_group","pnns_groups_1",
                          "pnns_groups_2","stores",
                          "main_category","image_url",
-                         "code")
+                         "code","url")
 
 search_grid <- expand_grid(countries,categories)
 
@@ -82,7 +82,9 @@ if(file.exists(uploaded_files)){
 
 #first file
 if(prexisting==0){
-df <- read_csv(files[1], col_types = cols(.default = "c")) %>% select(all_of(c(selected_attributes,"search_country","search_category")))
+df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
+      select(all_of(c(selected_attributes,"search_country","search_category")))
+
 dbWriteTable(con,"foods",df,overwrite=TRUE)
 write(files[1],uploaded_files,append=TRUE)
 j<-2

@@ -17,7 +17,17 @@ foods_local <- tbl(con, "foods") %>%
 
 dir_create(here("html"))
 
-ts <- trelliscope(foods_local, name="nut free foods",nrow=1,ncol=8,path=here("html"))
+ts <- trelliscope(foods_local, 
+                  name="nut free foods",
+                  desc="Nut free foods from openfoodfacts.org",
+                  state = list(labels = c("product_name", "brands",
+                                          "ingredients_text",
+                                          "labels",
+                                          "allergens","traces",
+                                          "nutriscore_grade",
+                                          "nova_group","pnns_groups_1",
+                                          "pnns_groups_2","stores")),
+                  nrow=1,ncol=8,path=here("html"))
 
 saveWidget(ts, here("html","trelliscope.html"),
              selfcontained = FALSE,

@@ -67,3 +67,10 @@
 /Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Greece-Beverages.csv
 /Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Greece-Breakfasts.csv
 /Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Greece-Canned&foods.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Breakfasts.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Canned&foods.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Cocoa&and&its&products.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Condiments.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Dairies.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Flatbreads.csv
+/Volumes/GoogleDrive/My Drive/GitHub/food_data/files/Australia-Frozen&foods.csv

@@ -80,7 +80,7 @@ food_edited <- food_edited %>%
             by="code") %>%
   mutate(across(where(is.logical), ~ if_else(is.na(.x),FALSE,.x))) %>%
   filter(`tree nuts`==FALSE & peanuts==FALSE) %>%
-  select(-peanuts,-`tree nuts`,-allergens,-traces) 
+  select(-peanuts,-`tree nuts`) 
 
 
 
