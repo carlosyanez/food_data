@@ -24,7 +24,8 @@ countries <- c(
   "Denmark",
   "Sweden",
   "Norway",
-  "Ireland"
+  "Ireland",
+  "Chile"
 )
 
 categories <- c(
@@ -122,8 +123,9 @@ if (file.exists(uploaded_files)) {
 #first file
 if (prexisting == 0) {
   df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
+        filter(!is.na(ingredients_text)) %>%
         select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
-        filter(!is.na(ingredients_text)) 
+        mutate(search_category=str_replace_all(search_category,"%20"," ")) 
 
  
   dbWriteTable(con, "foods", df, overwrite = TRUE)
@@ -144,8 +146,9 @@ for (i in j:length(files)) {
   if(sum(colnames(new_df) %in% selected_attributes)==19){
     
    new_df <- new_df %>%
-              select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
-              filter(!is.na(ingredients_text)) 
+             filter(!is.na(ingredients_text)) %>%
+             select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
+             mutate(search_category=str_replace_all(search_category,"%20"," ")) 
     
    dupes <- foods %>% 
            select(code,search_category,search_country) %>%
@@ -161,12 +164,20 @@ for (i in j:length(files)) {
               left_join(dupes,
                         by="code") %>%
               mutate(
-                    search_category=if_else(str_length(cat2)>0 & is.na(str_extract(search_category,cat2)),
-                                             str_c(cat2,", ",search_category),
-                                             search_category),
-                    search_country=if_else(str_length(country2)>0 & !is.na(str_extract(search_country,country2)),
-                                             str_c(country2,", ",search_country),
-                                             search_country)
+                    search_category=case_when(
+                                              is.na(cat2)                      ~ search_category,
+                                              is.na(search_category)           ~ cat2,
+                                              str_detect(search_category,cat2) ~ search_category,
+                                              search_category==cat2            ~ search_category,
+                                              TRUE                             ~ str_c(search_category,", ",cat2)
+                                    ),
+                    search_country=case_when(
+                                             is.na(country2)                     ~ search_country,
+                                             is.na(search_country)               ~ country2,
+                                             str_detect(search_country,country2) ~ search_country,
+                                             search_country==country2            ~ search_country,
+                                             TRUE                                ~ str_c(search_country,", ",country2)
+                    ),
                      ) %>%
               select(-cat2,-country2)
     

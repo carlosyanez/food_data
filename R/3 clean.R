@@ -27,7 +27,7 @@ to_remove <- allergens_edited %>%
   filter(!is.na(free_of)) %>%
   distinct(allergen) %>%
   pull(allergen) %>%
-  str_c(sep = "|")
+  str_c(collapse = "|")
 
 previous_clean <- ("foods" %in% dbListTables(con1))
 
@@ -74,12 +74,11 @@ for (allergen_i in allergen_list) {
     present2 <-
       str_detect(str_to_lower(food_edited[j, ]$traces), allergen_i_options)
     present3 <-
-      str_detect(str_to_lower(food_edited[j, ]$ingredients_text),
-                 allergen_i_options)
+      str_detect(str_to_lower(food_edited[j, ]$ingredients_text), allergen_i_options)
     
     result <- sum(present1, present2, present3, na.rm = TRUE)
     
-    if (result > 1)
+    if (result >= 1)
       result_table <- result_table %>%
       bind_rows(tibble(code = food_edited[j, ]$code, allergen = allergen_i))
   }
