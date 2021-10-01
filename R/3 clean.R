@@ -105,9 +105,19 @@ if("peanuts" %in% colnames(food_edited)){
     select(-peanuts)
 }
 
+countries <- food_edited %>% select(code,countries=search_country) %>%
+  separate_rows(countries,sep=",") %>%
+  distinct(code,countries) %>%
+  group_by(code) %>%
+  summarise(countries=str_c(countries,collapse=","),.groups = "drop")
+
+categories <- food_edited %>% select(code,categories=search_category) %>%
+  separate_rows(categories,sep=",") %>%
+  distinct(code,categories) %>%
+  group_by(code) %>%
+  summarise(categories=str_c(categories,collapse=","),.groups = "drop")
 
 food_edited <- food_edited %>%
-  mutate(countries=search_country) %>%
   mutate(across(
     where(is_character) &
       !contains("url"),
@@ -116,9 +126,10 @@ food_edited <- food_edited %>%
   filter(!is.na(ingredients_text)) %>%
   mutate(
     product_name = if_else(is.na(product_name), ingredients_text, product_name),
-    ingredients_text = str_to_lower(str_replace_all(ingredients_text, "_", " ")),
-    search_category = str_remove_all(search_category, "%20")
-  )
+    ingredients_text = str_to_lower(str_replace_all(ingredients_text, "_", " "))) %>%
+  select(-matches("categor"),-matches("countr")) %>%
+  left_join(countries,by="code") %>%
+  left_join(categories,by="code")
 
 
 dbWriteTable(con1, "foods", food_edited, overwrite = !previous_clean,append=previous_clean)

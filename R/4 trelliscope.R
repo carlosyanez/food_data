@@ -14,21 +14,35 @@ foods_local <- tbl(con, "foods") %>%
   collect() %>%
   mutate(image_url=if_else(is.na(image_url),"no-image-icon-23483.png",image_url),
           panel = img_panel(image_url)) %>%
-  select(-categories,-countries,
-         -allergens,-traces) %>%
-  rename("categories" = "search_category",
-         "countries"="search_country") %>%
+  select(-allergens,-traces) %>%
   mutate(any_allergen=if_else(rowSums(across(where(is.numeric)))==0,"No","Yes"),
          across(where(is.numeric), ~ as.character(if_else(.x == 1, "Yes", "No"))),
-         nutriscore_grade=str_to_upper(nutriscore_grade),
-         n=row_number())
+         nutriscore_grade=if_else(is.na(nutriscore_grade),"Not set",str_to_upper(nutriscore_grade)),
+         n=row_number(),
+         nova_group=case_when(
+           nova_group=="1" ~ "1 - Unprocessed or minimally processed foods",
+           nova_group=="2" ~ "2 - Processed culinary ingredients",
+           nova_group=="3" ~ "3 - Processed foods",
+           nova_group=="4" ~ "4 - Ultra-processed food and drink products",
+           TRUE          ~ as.character(NA)
+         )) 
 
 foods_local$link <-cog_href(foods_local$url,
                            desc = "openfoodfacts.org entry",
                            default_label = TRUE,
                            default_active=TRUE)
 
+foods_local <- foods_local %>%
+  select(product_name,brands,ingredients_text,countries,categories,
+         stores,nova_group,nutriscore_grade,pnns_groups_1,
+         any_allergen,
+         eggs,sesame,gluten,celery,lupin,fish,
+         milk,molluscs,crustaceans,sulphites,soy,`sulphur dioxide`,
+         n,link,panel)
+
+
 dir_create(here("html"))
+
 
 
 ts <- trelliscope(
@@ -57,7 +71,9 @@ ts <- trelliscope(
       "nutriscore_grade",
       "link",
       "any_allergen"
-    )
+    ),
+    sort = list(sort_spec("nutriscore_grade",dir = "asc"),
+                sort_spec("product_name",dir = "dsc"))
   ),
   nrow = 2,
   ncol = 8,

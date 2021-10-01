@@ -14,3 +14,4 @@ This project has been created using public, crowd-sourced food data. I make not 
 Food ingredients constantly change. Something that was allergen free yesterday may not be tomorrow. Allergies reactions can be serious, thus they should not be treated lightly. **Always check the labels, even in products you consume regularly**
 
 If you find any obvious mistakes/inaccuracies, please [let me know](https://github.com/carlosyanez/nutfree/issues).
+In  case you find missing /incorrect ingredientes, please update the item directly on [Open Food Facts](https://world.openfoodfacts.org). 

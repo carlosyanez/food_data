@@ -72,7 +72,7 @@ selected_attributes <- c(
 search_grid <- expand_grid(countries, categories)
 
 for (i in 1:nrow(search_grid)) {
-  message(i)
+  
   country    <- search_grid[i, ]$countries
   category   <- search_grid[i, ]$categories
   filename   <- here("files", str_c(country, "-", category, ".csv"))
@@ -169,14 +169,14 @@ for (i in j:length(files)) {
                                               is.na(search_category)           ~ cat2,
                                               str_detect(search_category,cat2) ~ search_category,
                                               search_category==cat2            ~ search_category,
-                                              TRUE                             ~ str_c(search_category,", ",cat2)
+                                              TRUE                             ~ str_c(search_category,cat2,sep=",")
                                     ),
                     search_country=case_when(
                                              is.na(country2)                     ~ search_country,
                                              is.na(search_country)               ~ country2,
                                              str_detect(search_country,country2) ~ search_country,
                                              search_country==country2            ~ search_country,
-                                             TRUE                                ~ str_c(search_country,", ",country2)
+                                             TRUE                                ~ str_c(search_country,country2,sep=",")
                     ),
                      ) %>%
               select(-cat2,-country2)
