@@ -7,7 +7,7 @@ library(dbplyr)
 
 con <- dbConnect(RSQLite::SQLite(), here("db", "food.sqlite"))
 con1 <-dbConnect(RSQLite::SQLite(), here("db", "food_refined.sqlite"))
-food_table <- tbl(con, "foods") %>% collect()
+food_table <- tbl(con, "foods") 
 
 
 allergens_edited <-
@@ -45,10 +45,11 @@ if(previous_clean){
   
 }else{
   food_edited <-  food_table %>%
-                   collect()
+                  collect()
 }
 
 food_edited <- food_edited %>%
+  filter(!grepl("water|wine|liquor",pnns_groups_1)) %>%
   mutate(allergens = str_remove_all(allergens, str_c(to_remove,collapse="|")),
          traces = str_remove_all(traces, str_c(to_remove,collapse="|"))) %>%
   filter(!is.na(ingredients_text)) %>%

@@ -25,7 +25,9 @@ countries <- c(
   "Sweden",
   "Norway",
   "Ireland",
-  "Chile"
+  "Chile",
+  "New%20Zealand",
+  "Luxembourg"
 )
 
 categories <- c(
@@ -44,7 +46,9 @@ categories <- c(
   "Pasta%20dishes",
   "Refrigerated%20meals",
   "Breads",
-  "Frozen%20desserts"
+  "Frozen%20desserts",
+  "Viennoiseries",
+  "Confectioneries"
 )
 
 selected_attributes <- c(
