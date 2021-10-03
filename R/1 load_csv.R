@@ -47,8 +47,10 @@ categories <- c(
   "Refrigerated%20meals",
   "Breads",
   "Frozen%20desserts",
+  "Ice%20creams%20and%20sorbets",
   "Viennoiseries",
-  "Confectioneries"
+  "Confectioneries",
+  "Meals"
 )
 
 selected_attributes <- c(
