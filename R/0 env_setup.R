@@ -5,20 +5,26 @@ options(repos = c(
 install.packages('just.install')
 install.packages("tidyverse")
 packages_to_install  <- tibble::tribble(~package,       ~source,~url,
-                                  "librarian",    "Github","DesiQuintans/librarian",             # used to attach tidyverse, optional
-                                  "box",          "CRAN","",
                                   "here",         "CRAN","",
                                   "fs",           "CRAN","",
-                                  "usethis",      "CRAN","",
                                   "RSQLite",      "CRAN","",
                                   "DBI",          "CRAN","",
-                                  "countrycode",  "CRAN","",
-                                  "trelliscopejs","CRAN",""
+                                  "trelliscopejs","CRAN","",
+                                  "htmlwidgets",    "CRAN","",
+                                  "gitignore",     "CRAN","",
+                                  "usethis",       "CRAN",""
 )
 
 just.install::justinstall(packages_to_install)
-rm(packages_to_install)
-renv::snapshot()
+renv::snapshot(prompt = FALSE)
 
+gitignore.file <- here::here(".gitignore")
+new_lines <- gitignore::gi_fetch_templates("r")
+gitignore::gi_write_gitignore(fetched_template = new_lines, gitignore_file = gitignore.file)
 usethis::git_vaccinate()
+write("files", gitignore.file, append = TRUE)
+write("db/food.sqlite", gitignore.file, append = TRUE)
+write("db/tracker.txt", gitignore.file, append = TRUE)
+write("dicts/allergen_dict.csv", gitignore.file, append = TRUE)
 
+rm(list = ls())

@@ -26,10 +26,8 @@ countries <- c(
   "Norway",
   "Ireland",
   "Chile",
-  "New%20Zealand",
   "Luxembourg"
 )
-
 categories <- c(
   "Snacks",
   "Breakfasts",
@@ -47,8 +45,11 @@ categories <- c(
   "Refrigerated%20meals",
   "Breads",
   "Frozen%20desserts",
+  "Ice%20creams",
+  "Plant-based%20ice%20creams",
   "Viennoiseries",
-  "Confectioneries"
+  "Confectioneries",
+  "Meals"
 )
 
 selected_attributes <- c(
@@ -75,6 +76,14 @@ selected_attributes <- c(
 
 search_grid <- expand_grid(countries, categories)
 
+extras <- tibble::tribble(~countries,~categories,
+                          "United%20Kingdom","Cocoa%20and%20its%20products",
+                          "United%20Kingdom","Snacks",
+                          "United%20Kingdom","Confectioneries"
+                          )
+
+search_grid <- bind_rows(search_grid,extras)
+
 for (i in 1:nrow(search_grid)) {
   
   country    <- search_grid[i, ]$countries
@@ -99,11 +108,12 @@ for (i in 1:nrow(search_grid)) {
       )
     download.file(download_string, filename)
     
-    read_csv(filename) %>%
-      mutate(search_category = category, search_country = country) %>%
-      write_csv(filename)
+    df <- read_csv(filename) %>%
+      mutate(search_category = category, search_country = country) 
+    write_csv(df,filename)
+    rm(df)
     
-    Sys.sleep(60)
+    Sys.sleep(30)
   }
 }
 
@@ -116,6 +126,7 @@ uploaded_files <- here("db", "tracker.txt")
 if (file.exists(uploaded_files)) {
   u <- read_csv(uploaded_files, col_names = FALSE)[,1] %>% pull(.)
   files <- files[!(files %in% u)]
+  prexisting <- 1
   
 } else{
   file_create(uploaded_files)
@@ -129,7 +140,9 @@ if (prexisting == 0) {
   df <- read_csv(files[1], col_types = cols(.default = "c")) %>%
         filter(!is.na(ingredients_text)) %>%
         select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
-        mutate(search_category=str_replace_all(search_category,"%20"," ")) 
+        mutate(search_category=str_replace_all(search_category,"%20"," ")) %>%
+       mutate(search_country=str_replace_all(search_country,"%20"," "),
+              new_flag=1)
 
  
   dbWriteTable(con, "foods", df, overwrite = TRUE)
@@ -140,6 +153,7 @@ if (prexisting == 0) {
 }
 
 foods <- tbl(con, "foods") 
+not_loaded <- c("0")
 if(length(files)>0){
 #others, appending if they are not there yet
 for (i in j:length(files)) {
@@ -147,7 +161,7 @@ for (i in j:length(files)) {
   
   new_df <- read_csv(files[i], col_types = cols(.default = "c")) 
 
-  if(sum(colnames(new_df) %in% selected_attributes)==19){
+  if(sum(colnames(new_df) %in% c(selected_attributes,"search_country","search_category"))==21){
     
    new_df <- new_df %>%
              filter(!is.na(ingredients_text)) %>%
@@ -180,7 +194,8 @@ for (i in j:length(files)) {
                                              is.na(search_country)               ~ country2,
                                              str_detect(search_country,country2) ~ search_country,
                                              search_country==country2            ~ search_country,
-                                             TRUE                                ~ str_c(search_country,country2,sep=",")
+                                             TRUE                                ~ str_c(search_country,country2,sep=","),
+                                             
                     ),
                      ) %>%
               select(-cat2,-country2)
@@ -189,12 +204,17 @@ for (i in j:length(files)) {
   
    }
    
+   new_df$new_flag<-1
    dbWriteTable(con, "foods", new_df, append = TRUE)
-   
    write(files[i], uploaded_files, append = TRUE)
+   
   }
+  else{
+    
+    message(files[i]," not loaded")
+    not_loaded <- c(not_loaded,files[i])}
 }
 }
 
 dbDisconnect(con)
-rm(list = ls())
+
