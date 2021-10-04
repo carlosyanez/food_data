@@ -16,8 +16,8 @@ foods_local <- tbl(con, "foods") %>%
   mutate(image_url=if_else(is.na(image_url),"no-image-icon-23483.png",image_url),
           panel = img_panel(image_url)) %>%
   select(-allergens,-traces) %>%
-  mutate(any_allergen=if_else(rowSums(across(where(is.numeric)))==0,"No","Yes"),
-         across(where(is.numeric), ~ as.character(if_else(.x == 1, "Yes", "No"))),
+  mutate(any_allergen=if_else(rowSums(across(where(is.numeric)))==0,"No","Yes","No"),
+         across(where(is.numeric), ~ as.character(if_else(.x == 1, "Yes", "No","No"))),
          nutriscore_grade=if_else(is.na(nutriscore_grade),"Not set",str_to_upper(nutriscore_grade)),
          n=row_number(),
          nova_group=case_when(
@@ -26,8 +26,12 @@ foods_local <- tbl(con, "foods") %>%
            nova_group=="3" ~ "3 - Processed foods",
            nova_group=="4" ~ "4 - Ultra-processed food and drink products",
            TRUE          ~ as.character(NA)
-         )) 
-
+         )) %>%
+  mutate(categories=str_replace_all(categories,"%20"," ")) %>%
+  mutate(countries=str_replace_all(countries,"%20"," ")) %>%
+  mutate(categories=str_replace_all(categories,",",", ")) %>%
+  mutate(countries=str_replace_all(countries,",",", "))
+           
 foods_local$link <-cog_href(foods_local$url,
                            desc = "openfoodfacts.org entry",
                            default_label = TRUE,

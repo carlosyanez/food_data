@@ -49,7 +49,8 @@ categories <- c(
   "Plant-based%20ice%20creams",
   "Viennoiseries",
   "Confectioneries",
-  "Meals"
+  "Meals",
+  "Biscuits%20and%20cakes"
 )
 
 selected_attributes <- c(
@@ -79,7 +80,9 @@ search_grid <- expand_grid(countries, categories)
 extras <- tibble::tribble(~countries,~categories,
                           "United%20Kingdom","Cocoa%20and%20its%20products",
                           "United%20Kingdom","Snacks",
-                          "United%20Kingdom","Confectioneries"
+                          "United%20Kingdom","Confectioneries",
+                          "United%20Kingdom","Biscuits%20and%20cakes"
+                          
                           )
 
 search_grid <- bind_rows(search_grid,extras)
@@ -141,8 +144,8 @@ if (prexisting == 0) {
         filter(!is.na(ingredients_text)) %>%
         select(all_of(c(selected_attributes, "search_country", "search_category"))) %>%
         mutate(search_category=str_replace_all(search_category,"%20"," ")) %>%
-       mutate(search_country=str_replace_all(search_country,"%20"," "),
-              new_flag=1)
+        mutate(search_country=str_replace_all(search_country,"%20"," ")) %>%
+        mutate(new_flag=1)
 
  
   dbWriteTable(con, "foods", df, overwrite = TRUE)
