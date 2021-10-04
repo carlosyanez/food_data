@@ -5,11 +5,12 @@ library(here)
 library(DBI)
 library(dbplyr)
 
+rm(list = ls())
 con <- dbConnect(RSQLite::SQLite(), here("db", "food.sqlite"))
 con1 <-dbConnect(RSQLite::SQLite(), here("db", "food_refined.sqlite"))
 food_table <- tbl(con, "foods") 
 
-
+#allergens and allergen free
 allergens_edited <-
   read_csv(here("dicts", "allergen_dict_edited.csv")) %>%
   select(-allergen_detailed) %>%
@@ -29,19 +30,21 @@ to_remove <- allergens_edited %>%
   pull(allergen) %>%
   str_c(collapse = "|")
 
+
+
 previous_clean <- ("foods" %in% dbListTables(con1))
 
 if(previous_clean){
   
-  
-  present <- tbl(con1, "foods") %>%
-             select(code) %>%
-             collect()
-  
   food_edited <-  food_table %>%
-                  filter(code %in% present$code) %>%
+                  filter(new_flag==1) %>%
                   collect()
   
+  dupes <- food_edited %>% select(code) %>% distinct(code)
+
+  dbWriteTable(con, "dupes", dupes, overwrite = TRUE)
+  dbExecute(con1,"DELETE FROM foods WHERE code in (SELECT code from dupes)")
+
   
 }else{
   food_edited <-  food_table %>%
@@ -134,7 +137,8 @@ food_edited <- food_edited %>%
 
 
 dbWriteTable(con1, "foods", food_edited, overwrite = !previous_clean,append=previous_clean)
+dbExecute(con,"UPDATE foods SET new_flag=0")
+
 
 dbDisconnect(con1)
 dbDisconnect(con)
-rm(list = ls())

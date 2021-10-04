@@ -1,0 +1,12 @@
+__loadDisplayList__58231469([
+  {
+    "group": "common",
+    "name": "nut_free_foods",
+    "desc": "Nut free foods from openfoodfacts.org",
+    "n": 53469,
+    "height": 500,
+    "width": 500,
+    "updated": "2021-10-04 11:07:30",
+    "keySig": "c9951e1ab966b66ed0eab0f47d5c5b2a"
+  }
+])

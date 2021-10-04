@@ -5,6 +5,7 @@ library(DBI)
 library(dbplyr)
 library(trelliscopejs)
 library(htmlwidgets)
+rm(list = ls())
 
 con <-
   dbConnect(RSQLite::SQLite(), here("db", "food_refined.sqlite"))
@@ -38,10 +39,14 @@ foods_local <- foods_local %>%
          any_allergen,
          eggs,sesame,gluten,celery,lupin,fish,
          milk,molluscs,crustaceans,sulphites,soy,`sulphur dioxide`,
-         n,link,panel)
+         n,link,panel,code)
 
-
+if(dir_exists(here("html"))){
+dir_delete(here("html","appfiles"))  
+  
+}else{
 dir_create(here("html"))
+}
 
 
 
@@ -70,7 +75,8 @@ ts <- trelliscope(
       "nova_group",
       "nutriscore_grade",
       "link",
-      "any_allergen"
+      "any_allergen",
+      "code"
     ),
     sort = list(sort_spec("nutriscore_grade",dir = "asc"),
                 sort_spec("product_name",dir = "dsc"))
