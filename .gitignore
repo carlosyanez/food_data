@@ -42,3 +42,5 @@ files
 db/food.sqlite
 db/tracker.txt
 dicts/allergen_dict.csv
+html/appfiles/.DS_Store
+.DS_Store
