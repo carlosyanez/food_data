@@ -81,8 +81,15 @@ extras <- tibble::tribble(~countries,~categories,
                           "United%20Kingdom","Cocoa%20and%20its%20products",
                           "United%20Kingdom","Snacks",
                           "United%20Kingdom","Confectioneries",
-                          "United%20Kingdom","Biscuits%20and%20cakes"
-                          
+                          "United%20Kingdom","Biscuits%20and%20cakes",
+                          "Canada","Cocoa%20and%20its%20products",
+                          "Canada","Snacks",
+                          "Canada","Confectioneries",
+                          "Canada","Biscuits%20and%20cakes",
+                          "New%20Zealand","Cocoa%20and%20its%20products",
+                          "New%20Zealand","Snacks",
+                          "New%20Zealand","Confectioneries",
+                          "New%20Zealand","Biscuits%20and%20cakes",
                           )
 
 search_grid <- bind_rows(search_grid,extras)
