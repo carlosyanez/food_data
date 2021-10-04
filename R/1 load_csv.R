@@ -76,10 +76,13 @@ selected_attributes <- c(
 
 search_grid <- expand_grid(countries, categories)
 
-extras <- tibble::tribble(~countries,categories,
-                          "United%20Kindgom","Cocoa%20and%20its%20products",
-                          "United%20Kindgom","Snacks"
+extras <- tibble::tribble(~countries,~categories,
+                          "United%20Kingdom","Cocoa%20and%20its%20products",
+                          "United%20Kingdom","Snacks",
+                          "United%20Kingdom","Confectioneries"
                           )
+
+search_grid <- bind_rows(search_grid,extras)
 
 for (i in 1:nrow(search_grid)) {
   

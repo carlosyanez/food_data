@@ -41,10 +41,14 @@ if(previous_clean){
                   collect()
   
   dupes <- food_edited %>% select(code) %>% distinct(code)
-
-  dbWriteTable(con, "dupes", dupes, overwrite = TRUE)
+  
+  if(exists("dupes")) {
+    if(nrow(dupes)>0){
+  dbWriteTable(con1, "dupes", dupes, overwrite = TRUE)
   dbExecute(con1,"DELETE FROM foods WHERE code in (SELECT code from dupes)")
-
+  dbRemoveTable(con1,"dupes")    
+  
+  }}
   
 }else{
   food_edited <-  food_table %>%
