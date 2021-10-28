@@ -4,7 +4,7 @@ Data obtained from [Open Food Facts](https://world.openfoodfacts.org).
 
 Dashboard created with [trelliscope](https://hafen.github.io/trelliscopejs/).
 
-[**Trelliscope Dashboard here**](html/index.html)
+[**Trelliscope Dashboard here**](https://carlosyanez.github.io/nutfree/html/index.html)
 (it will take time to load, but you can also [download it](https://github.com/carlosyanez/nutfree/archive/refs/heads/master.zip)).
 
 ## VERY IMPORTANT Disclaimer
